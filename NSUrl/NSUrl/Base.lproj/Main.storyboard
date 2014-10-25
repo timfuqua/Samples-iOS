@@ -86,6 +86,9 @@
                                                 <include reference="v9o-RW-Lxb"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="loadButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LOm-5S-yKm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -166,6 +169,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="loadButton" destination="nky-Bt-aBq" id="8uc-tI-Hzd"/>
+                        <outlet property="textField" destination="cEj-Rx-00r" id="Ab2-3J-ajT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

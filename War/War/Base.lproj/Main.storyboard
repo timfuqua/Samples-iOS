@@ -150,16 +150,16 @@
                                         <exclude reference="d80-mM-3pb"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="79D-AK-h9u"/>
+                                        <exclude reference="etc-rQ-Teq"/>
+                                        <exclude reference="pIY-X7-KrJ"/>
                                         <exclude reference="DFe-Nz-bcS"/>
                                         <exclude reference="5aW-nx-3ca"/>
                                         <exclude reference="eOR-LH-qcF"/>
                                         <exclude reference="jXy-cO-jXv"/>
+                                        <exclude reference="ugt-f0-YMq"/>
                                         <exclude reference="5KS-kz-e8v"/>
                                         <exclude reference="vLj-wG-89w"/>
-                                        <exclude reference="ugt-f0-YMq"/>
-                                        <exclude reference="79D-AK-h9u"/>
-                                        <exclude reference="etc-rQ-Teq"/>
-                                        <exclude reference="pIY-X7-KrJ"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -171,16 +171,16 @@
                                         <include reference="d80-mM-3pb"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="79D-AK-h9u"/>
+                                        <include reference="etc-rQ-Teq"/>
+                                        <include reference="pIY-X7-KrJ"/>
                                         <include reference="DFe-Nz-bcS"/>
                                         <include reference="5aW-nx-3ca"/>
                                         <include reference="eOR-LH-qcF"/>
                                         <include reference="jXy-cO-jXv"/>
+                                        <include reference="ugt-f0-YMq"/>
                                         <include reference="5KS-kz-e8v"/>
                                         <include reference="vLj-wG-89w"/>
-                                        <include reference="ugt-f0-YMq"/>
-                                        <include reference="79D-AK-h9u"/>
-                                        <include reference="etc-rQ-Teq"/>
-                                        <include reference="pIY-X7-KrJ"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -213,6 +213,8 @@
                                 <exclude reference="le2-EY-F9S"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Ip9-bL-vMV"/>
+                                <exclude reference="Thh-5e-2cj"/>
                                 <exclude reference="R0v-HY-rto"/>
                                 <exclude reference="iE4-6c-Xxv"/>
                                 <exclude reference="npj-7s-3JD"/>
@@ -225,8 +227,6 @@
                                 <exclude reference="CPr-qK-1gX"/>
                                 <exclude reference="beM-Nv-748"/>
                                 <exclude reference="vkx-Tv-rEB"/>
-                                <exclude reference="Ip9-bL-vMV"/>
-                                <exclude reference="Thh-5e-2cj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -237,6 +237,8 @@
                                 <include reference="le2-EY-F9S"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Ip9-bL-vMV"/>
+                                <include reference="Thh-5e-2cj"/>
                                 <include reference="R0v-HY-rto"/>
                                 <include reference="iE4-6c-Xxv"/>
                                 <include reference="npj-7s-3JD"/>
@@ -249,8 +251,6 @@
                                 <include reference="CPr-qK-1gX"/>
                                 <include reference="beM-Nv-748"/>
                                 <include reference="vkx-Tv-rEB"/>
-                                <include reference="Ip9-bL-vMV"/>
-                                <include reference="Thh-5e-2cj"/>
                             </mask>
                         </variation>
                     </view>
