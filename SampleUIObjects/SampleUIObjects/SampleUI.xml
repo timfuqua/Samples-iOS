@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<x:UIObjects xmlns:x="urn:SampleUI">
+   <Label id="Label001" title="My Label" frame="50 50 100 50" bgcolor="Blue" />
+</x:UIObjects>
