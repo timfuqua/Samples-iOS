@@ -5,20 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>F4F2C580-2EAF-4BFB-AD30-07F03EFA9AB0</string>
-=======
-	<string>3C78621A-5F99-40CE-91C3-ABB10966F8A8</string>
->>>>>>> 70f37a904ba81352d6cad4115cc8067460434337
+	<string>37D6A999-34CE-49CE-A77A-01A409C53B27</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SampleUIObjects</string>
+	<string>AEXMLExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1F01CF5FFD61D0CAF7D450C8C377690DAD53F1EB</key>
 		<string>https://github.com/timfuqua/Samples-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SampleUIObjects/SampleUIObjects.xcodeproj</string>
+	<string>AEXMLDemo/AEXMLExample.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1F01CF5FFD61D0CAF7D450C8C377690DAD53F1EB</key>

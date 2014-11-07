@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41BFC5E1A09E00E00AC52AF /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41BFC5D1A09E00E00AC52AF /* AEXML.swift */; };
+		C41BFC601A09E6A400AC52AF /* SampleUI.xml in Resources */ = {isa = PBXBuildFile; fileRef = C41BFC5F1A09E6A400AC52AF /* SampleUI.xml */; };
 		C44956AF1A086D9E006133DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44956AE1A086D9E006133DD /* AppDelegate.swift */; };
 		C44956B11A086D9E006133DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44956B01A086D9E006133DD /* ViewController.swift */; };
 		C44956B41A086D9E006133DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44956B21A086D9E006133DD /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C41BFC5D1A09E00E00AC52AF /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEXML.swift; sourceTree = SOURCE_ROOT; };
+		C41BFC5F1A09E6A400AC52AF /* SampleUI.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SampleUI.xml; sourceTree = "<group>"; };
 		C44956A91A086D9E006133DD /* SampleUIObjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIObjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44956AD1A086D9E006133DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C44956AE1A086D9E006133DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		C44956AB1A086D9E006133DD /* SampleUIObjects */ = {
 			isa = PBXGroup;
 			children = (
+				C41BFC5D1A09E00E00AC52AF /* AEXML.swift */,
 				C44956AE1A086D9E006133DD /* AppDelegate.swift */,
 				C44956B01A086D9E006133DD /* ViewController.swift */,
 				C44956B21A086D9E006133DD /* Main.storyboard */,
@@ -90,6 +95,7 @@
 		C44956AC1A086D9E006133DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C41BFC5F1A09E6A400AC52AF /* SampleUI.xml */,
 				C44956AD1A086D9E006133DD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,6 +201,7 @@
 				C44956B41A086D9E006133DD /* Main.storyboard in Resources */,
 				C44956B91A086D9E006133DD /* LaunchScreen.xib in Resources */,
 				C44956B61A086D9E006133DD /* Images.xcassets in Resources */,
+				C41BFC601A09E6A400AC52AF /* SampleUI.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44956B11A086D9E006133DD /* ViewController.swift in Sources */,
+				C41BFC5E1A09E00E00AC52AF /* AEXML.swift in Sources */,
 				C44956AF1A086D9E006133DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +413,7 @@
 				C44956CA1A086D9E006133DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C44956CB1A086D9E006133DD /* Build configuration list for PBXNativeTarget "SampleUIObjectsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				C44956CD1A086D9E006133DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

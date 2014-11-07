@@ -11,33 +11,81 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         let canvas = UIView(frame: CGRectMake(0, 0, 200, 200))
-        canvas.backgroundColor = UIColor.blueColor()
+        canvas.backgroundColor = UIColor.redColor()
         
-        let title = UILabel(frame: CGRectMake(50, 50, 100, 20))
-        title.text = "My Title"
-        title.textColor = UIColor.whiteColor()
-        title.textAlignment = NSTextAlignment.Center
-        
-        let button = UIButton(frame: CGRectMake(50, 100, 100, 50))
-        button.backgroundColor = UIColor.whiteColor()
-        button.setTitle("My Button", forState: UIControlState.Normal)
-        button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        
-        button.layer.cornerRadius = 10
-        button.layer.shadowColor = UIColor.blackColor().CGColor
-        button.layer.shadowOpacity = 0.1
-        button.layer.shadowOffset = CGSizeMake(10, 10)
-        button.layer.shadowRadius = 10
-        
-        canvas.addSubview(button)
-        canvas.addSubview(title)
+        if let xmlPath = NSBundle.mainBundle().pathForResource("SampleUI", ofType: "xml") {
+            
+            if let data = NSData(contentsOfFile: xmlPath) {
+                
+                // works only if data is successfully parsed
+                // otherwise prints information about error with parsing
+                var error: NSError?
+                if let xmlDoc = AEXMLDocument(xmlData: data, error: &error) {
+                    
+                    // prints the same XML structure as original
+                    println(xmlDoc.xmlString)
+                    
+                    // prints
+                    for child in xmlDoc.rootElement.children {
+                        
+                        println(child.name)
+                        
+                        switch child.name {
+                            
+                        case "Label":
+                            
+                            var label: UILabel = UILabel()
+                            label.textColor = UIColor.whiteColor()
+                            
+                            // check for the frame area
+                            if var stringFrameArea: String = child.attributes["frame"] as? NSString {
+                                
+                                var stringFrameAreaArray: [String] = stringFrameArea.componentsSeparatedByString(" ")
+                                label.frame = CGRect(x: stringFrameAreaArray[0].toInt()!, y: stringFrameAreaArray[1].toInt()!, width: stringFrameAreaArray[2].toInt()!, height: stringFrameAreaArray[3].toInt()!)
+                            }
+                            
+                            // check for the title string
+                            if var title = child.attributes["title"] as? NSString {
+                                
+                                label.text = title
+                            }
+                            
+                            // check for the background color
+                            if var bgcolor = child.attributes["bgcolor"] as? NSString {
+                                
+                                switch bgcolor {
+                                
+                                case "Blue":
+                                    label.backgroundColor = UIColor.blueColor()
+                                    
+                                case let unknownColor:
+                                    
+                                    println("\(unknownColor) color not supported")
+                                }
+                            }
+
+                            // add the object to the canvas
+                            canvas.addSubview(label)
+                            
+                        case let unknownType:
+                            
+                            println("\(unknownType) type not recognized")
+                        }
+                    }
+                }
+                else {
+                    
+                    println("description: \(error?.localizedDescription)\ninfo: \(error?.userInfo)")
+                }
+            }
+        }
         
         self.view.addSubview(canvas)
     }
-
 }
 
