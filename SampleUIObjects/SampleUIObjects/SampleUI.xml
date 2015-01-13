@@ -1,4 +1,7 @@
 <?xml version="1.0"?>
 <x:UIObjects xmlns:x="urn:SampleUI">
-   <Label id="Label001" title="My Label" frame="50 50 100 50" bgcolor="Blue" />
+	<UIView id="ViewA" frame="0 0 200 200" backgroundColor="UIColor.redColor()">
+		<UILabel id="LabelA1" text="Label A1" frame="50 25 100 50" backgroundColor="UIColor.blueColor()" />
+		<UILabel id="LabelA2" text="Label A2" frame="50 125 100 50" backgroundColor="UIColor.blueColor()" />
+	</UIView>
 </x:UIObjects>
