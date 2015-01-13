@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ViewTransitionSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2z-Gl-Uzi" userLabel="TransitionButton">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Do Transition">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTransition:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ctN-zO-YGj"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lcu-Qv-VpL" userLabel="SwappingViews">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Td0-ha-ojW"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Td0-ha-ojW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Td0-ha-ojW"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lcu-Qv-VpL" secondAttribute="trailing" constant="15" id="FYI-rM-xfB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Lcu-Qv-VpL" secondAttribute="bottom" constant="20" id="TcW-W1-wx9"/>
+                            <constraint firstAttribute="centerX" secondItem="L2z-Gl-Uzi" secondAttribute="centerX" id="hWF-qg-JAo"/>
+                            <constraint firstItem="L2z-Gl-Uzi" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="30" id="iAo-gH-3Vv"/>
+                            <constraint firstItem="Lcu-Qv-VpL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="jI2-JW-WEQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="L2z-Gl-Uzi"/>
+                                <exclude reference="Lcu-Qv-VpL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="hWF-qg-JAo"/>
+                                <exclude reference="iAo-gH-3Vv"/>
+                                <exclude reference="FYI-rM-xfB"/>
+                                <exclude reference="jI2-JW-WEQ"/>
+                                <exclude reference="TcW-W1-wx9"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="L2z-Gl-Uzi"/>
+                                <include reference="Lcu-Qv-VpL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="hWF-qg-JAo"/>
+                                <include reference="iAo-gH-3Vv"/>
+                                <include reference="FYI-rM-xfB"/>
+                                <include reference="jI2-JW-WEQ"/>
+                                <include reference="TcW-W1-wx9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="kh9-bI-dsS" id="zqE-mK-uOz"/>
+                        <outlet property="swappingViews" destination="Lcu-Qv-VpL" id="MYT-db-joz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
