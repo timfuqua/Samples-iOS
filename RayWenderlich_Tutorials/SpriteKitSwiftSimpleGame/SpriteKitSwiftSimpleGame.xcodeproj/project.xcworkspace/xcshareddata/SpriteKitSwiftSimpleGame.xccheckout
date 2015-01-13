@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0DC5E7C-0DE5-4EFA-9C9E-A8988481D859</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SpriteKitSwiftSimpleGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1F01CF5FFD61D0CAF7D450C8C377690DAD53F1EB</key>
+		<string>https://github.com/timfuqua/Samples-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RayWenderlich_Tutorials/SpriteKitSwiftSimpleGame/SpriteKitSwiftSimpleGame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1F01CF5FFD61D0CAF7D450C8C377690DAD53F1EB</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/timfuqua/Samples-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1F01CF5FFD61D0CAF7D450C8C377690DAD53F1EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1F01CF5FFD61D0CAF7D450C8C377690DAD53F1EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Samples-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
