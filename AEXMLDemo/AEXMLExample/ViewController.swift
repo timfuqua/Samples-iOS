@@ -140,6 +140,8 @@ class ViewController: UIViewController {
         
         if let url = NSURL(string: textField.text) {
             
+            println(url)
+            
             if let data = NSData(contentsOfURL: url) {
                 
                 var error: NSError?
