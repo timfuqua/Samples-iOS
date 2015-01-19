@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dow-wG-9gh" userLabel="EmployeeView">
-                                <rect key="frame" x="66" y="50" width="250" height="200"/>
+                                <rect key="frame" x="50" y="50" width="250" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Julie Andrews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYx-54-dRd">
                                         <rect key="frame" x="15" y="30" width="225" height="27"/>
@@ -172,11 +172,21 @@
                                     <constraint firstItem="F3f-qq-DaU" firstAttribute="width" secondItem="sk9-el-q1b" secondAttribute="width" id="zFD-JT-HuU"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYv-jT-D3s" userLabel="Monitored Employee Cell 2" customClass="MonitoredEmployeeCell" customModule="MonitoredEmployeeCellExample">
+                                <rect key="frame" x="325" y="50" width="250" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Fg7-Zm-u0D"/>
+                                    <constraint firstAttribute="height" constant="200" id="yhB-52-8bo"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dow-wG-9gh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="ZiG-eF-rVi"/>
+                            <constraint firstItem="oYv-jT-D3s" firstAttribute="leading" secondItem="Dow-wG-9gh" secondAttribute="trailing" constant="25" id="CL6-YE-Ycn"/>
+                            <constraint firstItem="Dow-wG-9gh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="ZiG-eF-rVi"/>
                             <constraint firstItem="Dow-wG-9gh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="fvZ-iN-wjX"/>
+                            <constraint firstItem="oYv-jT-D3s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="rY5-wx-Jga"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -188,6 +198,7 @@
                         <outlet property="NameLabel" destination="CYx-54-dRd" id="MZu-Vj-jgf"/>
                         <outlet property="PositionLabel" destination="sk9-el-q1b" id="Pef-pB-e2s"/>
                         <outlet property="TimeInStateLabel" destination="F3f-qq-DaU" id="vtv-U1-FPX"/>
+                        <outlet property="secondEmployeeCell" destination="oYv-jT-D3s" id="c5B-1p-26T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

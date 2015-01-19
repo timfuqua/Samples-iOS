@@ -15,6 +15,7 @@
 		C441FF0E1A687096007ED3B9 /* MonitoredEmployeeCellExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441FF0D1A687096007ED3B9 /* MonitoredEmployeeCellExampleTests.swift */; };
 		C441FF4A1A69BDDD007ED3B9 /* MonitoredEmployeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441FF491A69BDDD007ED3B9 /* MonitoredEmployeeData.swift */; };
 		C441FF7F1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C441FF7E1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib */; };
+		C441FF811A6DABFA007ED3B9 /* MonitoredEmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441FF801A6DABFA007ED3B9 /* MonitoredEmployeeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		C441FF0D1A687096007ED3B9 /* MonitoredEmployeeCellExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoredEmployeeCellExampleTests.swift; sourceTree = "<group>"; };
 		C441FF491A69BDDD007ED3B9 /* MonitoredEmployeeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoredEmployeeData.swift; sourceTree = "<group>"; };
 		C441FF7E1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonitoredEmployeeCell.xib; sourceTree = "<group>"; };
+		C441FF801A6DABFA007ED3B9 /* MonitoredEmployeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoredEmployeeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				C441FEF51A687096007ED3B9 /* Supporting Files */,
 				C441FF491A69BDDD007ED3B9 /* MonitoredEmployeeData.swift */,
 				C441FF7E1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib */,
+				C441FF801A6DABFA007ED3B9 /* MonitoredEmployeeCell.swift */,
 			);
 			path = MonitoredEmployeeCellExample;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				C441FEFA1A687096007ED3B9 /* ViewController.swift in Sources */,
 				C441FEF81A687096007ED3B9 /* AppDelegate.swift in Sources */,
 				C441FF4A1A69BDDD007ED3B9 /* MonitoredEmployeeData.swift in Sources */,
+				C441FF811A6DABFA007ED3B9 /* MonitoredEmployeeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

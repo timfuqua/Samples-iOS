@@ -4,7 +4,19 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonitoredEmployeeCell" customModule="MonitoredEmployeeCellExample">
+            <connections>
+                <outlet property="ACDNameData" destination="XqS-ol-2D9" id="Iow-R4-07e"/>
+                <outlet property="ACDNameString" destination="Upv-bL-Egj" id="buP-sV-Eoh"/>
+                <outlet property="ACDStateData" destination="HzU-5Z-K47" id="rmH-dW-kMt"/>
+                <outlet property="ACDStateString" destination="ZJB-fb-7xH" id="kT4-E9-HW0"/>
+                <outlet property="PositionData" destination="xO5-oM-23n" id="qgX-2o-6wD"/>
+                <outlet property="PositionString" destination="jI3-Rt-tz3" id="ahZ-sf-Q2B"/>
+                <outlet property="TimeInStateData" destination="PwK-Wa-Xfb" id="5tO-XE-yUC"/>
+                <outlet property="TimeInStateString" destination="edk-h6-u3K" id="bNu-UA-zNS"/>
+                <outlet property="employeeName" destination="f2J-1d-di0" id="7fj-VQ-bkK"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
@@ -18,16 +30,6 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                     <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACD Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-bL-Egj" userLabel="ACDName">
-                    <rect key="frame" x="15" y="67" width="110" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="110" id="kMN-5U-9oH"/>
-                        <constraint firstAttribute="height" constant="20" id="rOG-zZ-NU1"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI3-Rt-tz3">
@@ -100,6 +102,16 @@
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACD Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-bL-Egj" userLabel="ACDName">
+                    <rect key="frame" x="15" y="67" width="110" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="kMN-5U-9oH"/>
+                        <constraint firstAttribute="height" constant="20" id="rOG-zZ-NU1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -122,6 +134,7 @@
                 <constraint firstItem="PwK-Wa-Xfb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="125" id="vle-UZ-vgu"/>
                 <constraint firstItem="ZJB-fb-7xH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="w9E-8J-Et7"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>

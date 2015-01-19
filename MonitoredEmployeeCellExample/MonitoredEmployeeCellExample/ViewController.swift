@@ -20,19 +20,41 @@ class ViewController: UIViewController {
     @IBOutlet weak var ACDStateLabel: UILabel!
     @IBOutlet weak var TimeInStateLabel: UILabel!
     
+    @IBOutlet weak var secondEmployeeCell: MonitoredEmployeeCell!
+    var thirdEmployeeCell: MonitoredEmployeeCell?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         var firstEmployee: MonitoredEmployeeData = MonitoredEmployeeData(name: "Julie Andrews", acdName: "ACDOUT", position: "2030758", acdState: "ACDOUT", timeInState: "05:46:05")
         var secondEmployee: MonitoredEmployeeData = MonitoredEmployeeData(name: "Sam Smith", acdName: "ACW", position: "2030729", acdState: "ACW", timeInState: "02:30:02")
+        var thirdEmployee: MonitoredEmployeeData = MonitoredEmployeeData(name: "John Andrews", acdName: "HOLD", position: "2030475", acdState: "HOLD", timeInState: "01:46:08")
 
         FirstEmployeeView.layer.cornerRadius = 20
         FirstEmployeeView.layer.borderColor = UIColor.darkGrayColor().CGColor
         FirstEmployeeView.layer.borderWidth = 2
 
-//        setEmployeeData(firstEmployee)
-        setEmployeeData(secondEmployee)
+        setEmployeeData(firstEmployee)
+//        setEmployeeData(secondEmployee)
+        
+        secondEmployeeCell.updateData(secondEmployee)
+        
+//        let layerFrame: CGRect = secondEmployeeCell.view.layer.frame
+//        let viewFrame: CGRect = secondEmployeeCell.view.frame
+//        let layerBounds: CGRect = secondEmployeeCell.view.layer.bounds
+//        let viewBounds: CGRect = secondEmployeeCell.view.bounds
+        let width: CGFloat = CGFloat(secondEmployeeCell.view.layer.frame.width)
+        let height: CGFloat = CGFloat(secondEmployeeCell.view.layer.frame.height)
+//        let x: CGFloat = CGFloat(secondEmployeeCell.view.layer.frame.origin.x + width + 25.0)
+//        let y: CGFloat = CGFloat(secondEmployeeCell.view.layer.frame.origin.y)
+        let x: CGFloat = CGFloat(50.0 + width + 25.0 + width + 25.0)
+        let y: CGFloat = CGFloat(50.0)
+        
+//        thirdEmployeeCell = MonitoredEmployeeCell(frame: CGRect(x: CGFloat(secondEmployeeCell.view.layer.frame.origin.x + 25.0), y: CGFloat(secondEmployeeCell.view.layer.frame.origin.y), width: CGFloat(secondEmployeeCell.view.layer.frame.width), height: CGFloat(secondEmployeeCell.view.layer.frame.height)))
+        thirdEmployeeCell = MonitoredEmployeeCell(frame: CGRect(x: x, y: y, width: width, height: height))
+        self.view.addSubview(thirdEmployeeCell!)
+        thirdEmployeeCell!.updateData(thirdEmployee)
         
 //        NameLabel.text = firstEmployee.name
 //        ACDNameLabel.text = firstEmployee.ACDName
@@ -60,7 +82,7 @@ class ViewController: UIViewController {
 //        
 //        secondEmpoyeeView.addSubview(nameLabel)
         
-        createEmployeeCell(50, yOffset: 50, employeeData: secondEmployee, inView: self.view)
+//        createEmployeeCell(50, yOffset: 50, employeeData: secondEmployee, inView: self.view)
     }
 
     override func didReceiveMemoryWarning() {
