@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Sidebar" customModule="ProjectWithSidebar" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znh-Wt-LM9" userLabel="SidebarView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="67i-t3-NsQ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="67i-t3-NsQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="67i-t3-NsQ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="znh-Wt-LM9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Stn-Oh-ell"/>
+                <constraint firstAttribute="bottom" secondItem="znh-Wt-LM9" secondAttribute="bottom" id="rhk-8w-o4R"/>
+                <constraint firstItem="znh-Wt-LM9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="zyY-ak-QgY"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="znh-Wt-LM9"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Stn-Oh-ell"/>
+                    <exclude reference="rhk-8w-o4R"/>
+                    <exclude reference="zyY-ak-QgY"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="znh-Wt-LM9"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Stn-Oh-ell"/>
+                    <include reference="rhk-8w-o4R"/>
+                    <include reference="zyY-ak-QgY"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="565" y="517"/>
+        </view>
+    </objects>
+</document>
