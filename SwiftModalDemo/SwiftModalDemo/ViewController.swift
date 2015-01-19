@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, MyModalDelegate {
+class ViewController: UIViewController {
     
     let pieVC = MyModalVC(nibName: "MyModalVC", bundle: nil)
 
@@ -24,11 +24,6 @@ class ViewController: UIViewController, MyModalDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func myModalDidFinish(controller: MyModalVC, pie: String) {
-        statusLabel.text = pie + " pie"
-        controller.dismissViewControllerAnimated(true, completion: nil)
-    }
 
     @IBAction func myModalButton(sender: UIButton) {
         pieVC.delegate = self
@@ -38,3 +33,10 @@ class ViewController: UIViewController, MyModalDelegate {
 
 }
 
+extension ViewController: MyModalDelegate {
+    
+    func myModalDidFinish(controller: MyModalVC, pie: String) {
+        statusLabel.text = pie + " pie"
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
+}
