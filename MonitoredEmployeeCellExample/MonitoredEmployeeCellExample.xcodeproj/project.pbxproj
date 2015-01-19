@@ -14,6 +14,7 @@
 		C441FF021A687096007ED3B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C441FF001A687096007ED3B9 /* LaunchScreen.xib */; };
 		C441FF0E1A687096007ED3B9 /* MonitoredEmployeeCellExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441FF0D1A687096007ED3B9 /* MonitoredEmployeeCellExampleTests.swift */; };
 		C441FF4A1A69BDDD007ED3B9 /* MonitoredEmployeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441FF491A69BDDD007ED3B9 /* MonitoredEmployeeData.swift */; };
+		C441FF7F1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C441FF7E1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C441FF0C1A687096007ED3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C441FF0D1A687096007ED3B9 /* MonitoredEmployeeCellExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoredEmployeeCellExampleTests.swift; sourceTree = "<group>"; };
 		C441FF491A69BDDD007ED3B9 /* MonitoredEmployeeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoredEmployeeData.swift; sourceTree = "<group>"; };
+		C441FF7E1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonitoredEmployeeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				C441FF001A687096007ED3B9 /* LaunchScreen.xib */,
 				C441FEF51A687096007ED3B9 /* Supporting Files */,
 				C441FF491A69BDDD007ED3B9 /* MonitoredEmployeeData.swift */,
+				C441FF7E1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib */,
 			);
 			path = MonitoredEmployeeCellExample;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				C441FEFD1A687096007ED3B9 /* Main.storyboard in Resources */,
 				C441FF021A687096007ED3B9 /* LaunchScreen.xib in Resources */,
 				C441FEFF1A687096007ED3B9 /* Images.xcassets in Resources */,
+				C441FF7F1A6D9236007ED3B9 /* MonitoredEmployeeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
