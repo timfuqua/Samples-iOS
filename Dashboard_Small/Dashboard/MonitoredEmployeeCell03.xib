@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonitoredEmployeeCell03" customModule="Dashboard">
+            <connections>
+                <outlet property="ACDStateData" destination="HzU-5Z-K47" id="rmH-dW-kMt"/>
+                <outlet property="TimeInStateData" destination="PwK-Wa-Xfb" id="5tO-XE-yUC"/>
+                <outlet property="employeeName" destination="f2J-1d-di0" id="7fj-VQ-bkK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleAspectFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DW-bf-NYA" userLabel="Padding">
+                    <rect key="frame" x="12.5" y="9" width="225" height="107.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y Julie y Andrews y" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-1d-di0" userLabel="Name">
+                            <rect key="frame" x="0.0" y="18.5" width="225" height="27"/>
+                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABCDEFG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzU-5Z-K47">
+                            <rect key="frame" x="0.0" y="64.5" width="107.5" height="21"/>
+                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwK-Wa-Xfb">
+                            <rect key="frame" x="117.5" y="64.5" width="107" height="21"/>
+                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="f2J-1d-di0" firstAttribute="top" secondItem="5DW-bf-NYA" secondAttribute="centerY" multiplier="0.35" id="7hr-UA-fwi"/>
+                        <constraint firstItem="HzU-5Z-K47" firstAttribute="bottom" secondItem="5DW-bf-NYA" secondAttribute="centerY" multiplier="1.6" id="DyK-7C-Ogp"/>
+                        <constraint firstItem="HzU-5Z-K47" firstAttribute="leading" secondItem="5DW-bf-NYA" secondAttribute="leading" id="FoY-dL-OGm"/>
+                        <constraint firstItem="f2J-1d-di0" firstAttribute="bottom" secondItem="5DW-bf-NYA" secondAttribute="centerY" multiplier="0.85" id="IVk-Vf-L5q"/>
+                        <constraint firstItem="f2J-1d-di0" firstAttribute="leading" secondItem="5DW-bf-NYA" secondAttribute="leading" id="Laf-Ar-fed"/>
+                        <constraint firstItem="HzU-5Z-K47" firstAttribute="trailing" secondItem="5DW-bf-NYA" secondAttribute="centerX" multiplier="0.95" id="RFi-u3-sd9"/>
+                        <constraint firstItem="PwK-Wa-Xfb" firstAttribute="top" secondItem="5DW-bf-NYA" secondAttribute="centerY" multiplier="1.2" id="Uoc-pu-zIs"/>
+                        <constraint firstItem="f2J-1d-di0" firstAttribute="trailing" secondItem="5DW-bf-NYA" secondAttribute="trailing" id="VkO-LQ-0Z2"/>
+                        <constraint firstItem="PwK-Wa-Xfb" firstAttribute="leading" secondItem="5DW-bf-NYA" secondAttribute="centerX" multiplier="1.05" id="nB9-5n-ajh"/>
+                        <constraint firstItem="HzU-5Z-K47" firstAttribute="top" secondItem="5DW-bf-NYA" secondAttribute="centerY" multiplier="1.2" id="nWL-Yn-0CT"/>
+                        <constraint firstItem="PwK-Wa-Xfb" firstAttribute="trailing" secondItem="5DW-bf-NYA" secondAttribute="centerX" multiplier="2" id="oBG-kI-Xpe"/>
+                        <constraint firstItem="PwK-Wa-Xfb" firstAttribute="bottom" secondItem="5DW-bf-NYA" secondAttribute="centerY" multiplier="1.6" id="yBK-5u-O8b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5DW-bf-NYA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.14" id="82i-iN-CVu"/>
+                <constraint firstItem="5DW-bf-NYA" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.9" id="Ivy-uM-dKc"/>
+                <constraint firstItem="5DW-bf-NYA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.1" id="YZM-RA-AdL"/>
+                <constraint firstItem="5DW-bf-NYA" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.86" id="es9-9o-U38"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="577" y="557.5"/>
+        </view>
+    </objects>
+</document>
