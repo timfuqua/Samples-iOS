@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C42689551A6F191900682026 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42689541A6F191900682026 /* CustomView.xib */; };
 		C441FF911A6EE9A5007ED3B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441FF901A6EE9A5007ED3B9 /* AppDelegate.swift */; };
 		C441FF931A6EE9A5007ED3B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441FF921A6EE9A5007ED3B9 /* ViewController.swift */; };
 		C441FF961A6EE9A5007ED3B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C441FF941A6EE9A5007ED3B9 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C42689541A6F191900682026 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		C441FF8B1A6EE9A5007ED3B9 /* PercentageBasedDimensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PercentageBasedDimensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C441FF8F1A6EE9A5007ED3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C441FF901A6EE9A5007ED3B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				C441FF971A6EE9A5007ED3B9 /* Images.xcassets */,
 				C441FF991A6EE9A5007ED3B9 /* LaunchScreen.xib */,
 				C441FF8E1A6EE9A5007ED3B9 /* Supporting Files */,
+				C42689541A6F191900682026 /* CustomView.xib */,
 			);
 			path = PercentageBasedDimensions;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C441FF961A6EE9A5007ED3B9 /* Main.storyboard in Resources */,
+				C42689551A6F191900682026 /* CustomView.xib in Resources */,
 				C441FF9B1A6EE9A5007ED3B9 /* LaunchScreen.xib in Resources */,
 				C441FF981A6EE9A5007ED3B9 /* Images.xcassets in Resources */,
 			);
@@ -407,6 +411,7 @@
 				C441FFAC1A6EE9A5007ED3B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C441FFAD1A6EE9A5007ED3B9 /* Build configuration list for PBXNativeTarget "PercentageBasedDimensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				C441FFAF1A6EE9A5007ED3B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
