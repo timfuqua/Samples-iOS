@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Dashboard
+//  ProgrammaticConstraints
 //
-//  Created by stephen zhou on 1/16/15.
-//  Copyright (c) 2015 stephen zhou. All rights reserved.
+//  Created by Tim Fuqua on 1/30/15.
+//  Copyright (c) 2015 FuquaProductions. All rights reserved.
 //
 
 import UIKit
@@ -12,11 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let themeColor = UIColor(red: 0.01, green: 0.41, blue: 0.22, alpha: 1.0)
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        window?.tintColor = themeColor
         return true
     }
 
