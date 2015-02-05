@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="n2a-YX-b66">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Controller-->
+        <scene sceneID="pyq-vd-JYH">
+            <objects>
+                <viewController id="n2a-YX-b66" userLabel="Welcome Controller" customClass="WelcomeViewController" customModule="MultipleStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kdS-nS-9yd"/>
+                        <viewControllerLayoutGuide type="bottom" id="jPh-xq-avU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZrG-uf-FeP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3B-YS-oIR">
+                                <rect key="frame" x="16" y="50" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.96470588239999999" blue="0.93725490199999995" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="View Timeline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onViewTimelinePressed:" destination="n2a-YX-b66" eventType="touchUpInside" id="4tD-Fs-HTk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaK-Cb-Fyn">
+                                <rect key="frame" x="16" y="100" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.96470588239999999" blue="0.93725490199999995" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Friends View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onFriendsViewPressed:" destination="n2a-YX-b66" eventType="touchUpInside" id="VZE-4D-2HW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhu-74-Zcc" userLabel="Login With Facebook">
+                                <rect key="frame" x="16" y="330" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.96470588239999999" blue="0.93725490199999995" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLoginPressed:" destination="n2a-YX-b66" eventType="touchUpInside" id="wed-gW-uqV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XaK-Cb-Fyn" firstAttribute="top" secondItem="ZrG-uf-FeP" secondAttribute="topMargin" constant="100" id="1tl-Zq-KNA"/>
+                            <constraint firstItem="uhu-74-Zcc" firstAttribute="trailing" secondItem="ZrG-uf-FeP" secondAttribute="trailingMargin" id="4zN-lf-Luz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XaK-Cb-Fyn" secondAttribute="trailing" id="FPq-Rs-gDu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p3B-YS-oIR" secondAttribute="trailing" id="Jca-XA-xyr"/>
+                            <constraint firstItem="uhu-74-Zcc" firstAttribute="top" secondItem="XaK-Cb-Fyn" secondAttribute="bottom" constant="200" id="SPc-TJ-aRj"/>
+                            <constraint firstItem="uhu-74-Zcc" firstAttribute="leading" secondItem="ZrG-uf-FeP" secondAttribute="leadingMargin" id="U5H-UM-U7r"/>
+                            <constraint firstItem="XaK-Cb-Fyn" firstAttribute="leading" secondItem="ZrG-uf-FeP" secondAttribute="leadingMargin" id="Wd7-f2-htN"/>
+                            <constraint firstItem="p3B-YS-oIR" firstAttribute="top" secondItem="ZrG-uf-FeP" secondAttribute="topMargin" constant="50" id="eWS-gD-VWx"/>
+                            <constraint firstItem="p3B-YS-oIR" firstAttribute="leading" secondItem="ZrG-uf-FeP" secondAttribute="leadingMargin" id="zWI-QK-8HB"/>
+                        </constraints>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="p3B-YS-oIR"/>
+                                <include reference="XaK-Cb-Fyn"/>
+                                <include reference="uhu-74-Zcc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjX-bd-hWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="621"/>
+        </scene>
+    </scenes>
+</document>
