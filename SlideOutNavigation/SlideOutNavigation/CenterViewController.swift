@@ -15,7 +15,7 @@ protocol CenterViewControllerDelegate {
     optional func collapseSidePanels()
 }
 
-class CenterViewController: UIViewController, SidePanelViewControllerDelegate {
+class CenterViewController: UIViewController {
     
     @IBOutlet weak private var imageView: UIImageView!
     @IBOutlet weak private var titleLabel: UILabel!
@@ -23,14 +23,6 @@ class CenterViewController: UIViewController, SidePanelViewControllerDelegate {
     
     var delegate: CenterViewControllerDelegate?
     
-    func animalSelected(animal: Animal) {
-        imageView.image = animal.image
-        titleLabel.text = animal.title
-        creatorLabel.text = animal.creator
-        
-        delegate?.collapseSidePanels?()
-    }
-
     // MARK: Button actions
     
     @IBAction func kittiesTapped(sender: AnyObject) {
@@ -40,4 +32,14 @@ class CenterViewController: UIViewController, SidePanelViewControllerDelegate {
     @IBAction func puppiesTapped(sender: AnyObject) {
         delegate?.toggleRightPanel?()
     }
+}
+
+extension CenterViewController: SidePanelViewControllerDelegate {
+  func animalSelected(animal: Animal) {
+    imageView.image = animal.image
+    titleLabel.text = animal.title
+    creatorLabel.text = animal.creator
+    
+    delegate?.collapseSidePanels?()
+  }
 }
