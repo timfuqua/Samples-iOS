@@ -1,25 +1,31 @@
-//
-//  ViewController.swift
-//  MultiTouchTable
-//
-//  Created by Tim Fuqua on 3/5/15.
-//  Copyright (c) 2015 FuquaProductions. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
+  var dataSource: [String] = [String]()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    for index in 0...9 {
+      dataSource.append("Item \(index)")
+    }
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
 
 }
 
+extension ViewController: UITableViewDataSource {
+  
+  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return dataSource.count
+  }
+
+  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCellWithIdentifier("simpleCell", forIndexPath: indexPath) as UITableViewCell
+    
+    cell.textLabel?.text = dataSource[indexPath.row]
+    
+    return cell
+  }
+  
+}
