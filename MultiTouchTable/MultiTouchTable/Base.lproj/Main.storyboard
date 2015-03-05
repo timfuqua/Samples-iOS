@@ -8,7 +8,7 @@
         <scene sceneID="KPU-q0-N4j">
             <objects>
                 <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="ttL-QF-4tw" customClass="ViewController" customModule="MultiTouchTable" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="A39-Om-iUd">
+                    <tableView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="A39-Om-iUd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -25,6 +25,9 @@
                             <outlet property="delegate" destination="ttL-QF-4tw" id="PuI-bh-BgF"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="simpleTableView" destination="A39-Om-iUd" id="0V4-yy-oAp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iz0-fY-096" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -3,6 +3,7 @@ import UIKit
 class ViewController: UITableViewController {
 
   var dataSource: [String] = [String]()
+  @IBOutlet var simpleTableView: UITableView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -15,6 +16,8 @@ class ViewController: UITableViewController {
     recognizer.delegate = self
     recognizer.cancelsTouchesInView = false
     view.addGestureRecognizer(recognizer)
+    
+    simpleTableView.allowsMultipleSelection = true
   }
   
   func didTap() {
@@ -35,6 +38,18 @@ extension ViewController: UITableViewDataSource {
     cell.textLabel?.text = dataSource[indexPath.row]
     
     return cell
+  }
+  
+}
+
+extension ViewController: UITableViewDelegate {
+
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    println("Selected cell \(dataSource[indexPath.row])")
+  }
+  
+  override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    println("Deselected cell \(dataSource[indexPath.row])")
   }
   
 }

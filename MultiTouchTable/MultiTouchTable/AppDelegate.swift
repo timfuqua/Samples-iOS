@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  MultiTouchTable
-//
-//  Created by Tim Fuqua on 3/5/15.
-//  Copyright (c) 2015 FuquaProductions. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
