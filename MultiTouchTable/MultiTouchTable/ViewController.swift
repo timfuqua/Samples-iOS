@@ -10,6 +10,15 @@ class ViewController: UITableViewController {
     for index in 0...9 {
       dataSource.append("Item \(index)")
     }
+    
+    let recognizer = UITapGestureRecognizer(target: self, action: "didTap")
+    recognizer.delegate = self
+    recognizer.cancelsTouchesInView = false
+    view.addGestureRecognizer(recognizer)
+  }
+  
+  func didTap() {
+    println("Received tap")
   }
 
 }
@@ -26,6 +35,18 @@ extension ViewController: UITableViewDataSource {
     cell.textLabel?.text = dataSource[indexPath.row]
     
     return cell
+  }
+  
+}
+
+extension ViewController: UIGestureRecognizerDelegate {
+  
+  func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+    var location: CGPoint = touch.locationInView(self.view)
+
+    println("Touch received at location \(location.x),\(location.y)")
+    
+    return true
   }
   
 }
