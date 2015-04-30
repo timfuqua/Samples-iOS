@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftFilePathExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52D-Tx-Y11" userLabel="FirstTextField">
+                                <rect key="frame" x="437.5" y="200" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ZVT-fW-Cas"/>
+                                    <constraint firstAttribute="height" constant="30" id="zHC-QX-QYn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qkv-Gh-XJQ" userLabel="SecondTextField">
+                                <rect key="frame" x="437.5" y="238" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQC-iA-PtE" userLabel="Save">
+                                <rect key="frame" x="489" y="280" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="17M-GJ-foq"/>
+                                    <constraint firstAttribute="height" constant="30" id="vSK-zN-wFR"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdz-Iy-Thw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxH-5m-CX9" userLabel="Load">
+                                <rect key="frame" x="489" y="318" width="46" height="30"/>
+                                <state key="normal" title="Load">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsd-RA-zpf"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckV-oJ-DUx" userLabel="FileContents">
+                                <rect key="frame" x="392" y="440" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="MrU-dZ-fGS"/>
+                                    <constraint firstAttribute="height" constant="128" id="yfF-8v-FDL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FQC-iA-PtE" firstAttribute="top" secondItem="Qkv-Gh-XJQ" secondAttribute="bottom" constant="12" id="0Mi-f4-IMq"/>
+                            <constraint firstItem="Qkv-Gh-XJQ" firstAttribute="height" secondItem="52D-Tx-Y11" secondAttribute="height" id="1tc-vX-UyE"/>
+                            <constraint firstItem="Qkv-Gh-XJQ" firstAttribute="top" secondItem="52D-Tx-Y11" secondAttribute="bottom" constant="8" id="CDb-cP-RN1"/>
+                            <constraint firstItem="JxH-5m-CX9" firstAttribute="width" secondItem="FQC-iA-PtE" secondAttribute="width" id="FEx-lL-a6S"/>
+                            <constraint firstItem="JxH-5m-CX9" firstAttribute="centerX" secondItem="52D-Tx-Y11" secondAttribute="centerX" constant="-0.5" id="Gjb-CW-vta"/>
+                            <constraint firstItem="FQC-iA-PtE" firstAttribute="centerX" secondItem="52D-Tx-Y11" secondAttribute="centerX" constant="-0.5" id="PeT-jU-GJu"/>
+                            <constraint firstItem="JxH-5m-CX9" firstAttribute="top" secondItem="FQC-iA-PtE" secondAttribute="bottom" constant="8" id="Qw4-yX-Nn6"/>
+                            <constraint firstAttribute="centerX" secondItem="ckV-oJ-DUx" secondAttribute="centerX" id="Rdk-em-g83"/>
+                            <constraint firstAttribute="centerX" secondItem="52D-Tx-Y11" secondAttribute="centerX" id="bHm-fG-lnp"/>
+                            <constraint firstItem="Qkv-Gh-XJQ" firstAttribute="width" secondItem="52D-Tx-Y11" secondAttribute="width" id="cW4-O9-gZH"/>
+                            <constraint firstItem="52D-Tx-Y11" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="200" id="itQ-IA-uzt"/>
+                            <constraint firstItem="JxH-5m-CX9" firstAttribute="height" secondItem="FQC-iA-PtE" secondAttribute="height" id="iw3-J3-jKx"/>
+                            <constraint firstItem="Qkv-Gh-XJQ" firstAttribute="centerX" secondItem="52D-Tx-Y11" secondAttribute="centerX" id="rIM-eT-7WH"/>
+                            <constraint firstItem="ckV-oJ-DUx" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-200" id="ufm-yS-JGJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="fileContents" destination="ckV-oJ-DUx" id="GVC-PW-R0N"/>
+                        <outlet property="firstTextField" destination="52D-Tx-Y11" id="fN8-Cy-YUW"/>
+                        <outlet property="loadButton" destination="JxH-5m-CX9" id="cdt-cU-Nav"/>
+                        <outlet property="saveButton" destination="FQC-iA-PtE" id="WXh-cZ-fJT"/>
+                        <outlet property="secondTextField" destination="Qkv-Gh-XJQ" id="tns-X4-Kxh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
