@@ -15,8 +15,10 @@
 		60F24DE61AF2ADCC00171945 /* SwiftFilePathExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F24DE51AF2ADCC00171945 /* SwiftFilePathExampleTests.swift */; };
 		60F24DF91AF2AF0400171945 /* SwiftFilePath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F24DF61AF2AEED00171945 /* SwiftFilePath.framework */; };
 		60F24DFA1AF2AF0400171945 /* SwiftFilePath.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60F24DF61AF2AEED00171945 /* SwiftFilePath.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		60F24DFF1AF2B44200171945 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F24DFE1AF2B44200171945 /* DataModel.swift */; };
+		60F24DFF1AF2B44200171945 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F24DFE1AF2B44200171945 /* DataObject.swift */; };
 		60F24E011AF2B4FF00171945 /* DelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F24E001AF2B4FF00171945 /* DelegateManager.swift */; };
+		60F24E031AF2EA6100171945 /* DataFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F24E021AF2EA6100171945 /* DataFile.swift */; };
+		60F24E051AF2EB5C00171945 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F24E041AF2EB5C00171945 /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +78,10 @@
 		60F24DE41AF2ADCC00171945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60F24DE51AF2ADCC00171945 /* SwiftFilePathExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFilePathExampleTests.swift; sourceTree = "<group>"; };
 		60F24DF01AF2AEED00171945 /* SwiftFilePath.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftFilePath.xcodeproj; path = ../SwiftFilePath/SwiftFilePath.xcodeproj; sourceTree = "<group>"; };
-		60F24DFE1AF2B44200171945 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		60F24DFE1AF2B44200171945 /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
 		60F24E001AF2B4FF00171945 /* DelegateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateManager.swift; sourceTree = "<group>"; };
+		60F24E021AF2EA6100171945 /* DataFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFile.swift; sourceTree = "<group>"; };
+		60F24E041AF2EB5C00171945 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				60F24DCF1AF2ADCC00171945 /* AppDelegate.swift */,
-				60F24DFE1AF2B44200171945 /* DataModel.swift */,
+				60F24DFE1AF2B44200171945 /* DataObject.swift */,
+				60F24E021AF2EA6100171945 /* DataFile.swift */,
+				60F24E041AF2EB5C00171945 /* FileManager.swift */,
 				60F24E001AF2B4FF00171945 /* DelegateManager.swift */,
 				60F24DD61AF2ADCC00171945 /* Images.xcassets */,
 				60F24DD81AF2ADCC00171945 /* LaunchScreen.xib */,
@@ -303,7 +309,9 @@
 				60F24DD21AF2ADCC00171945 /* ViewController.swift in Sources */,
 				60F24DD01AF2ADCC00171945 /* AppDelegate.swift in Sources */,
 				60F24E011AF2B4FF00171945 /* DelegateManager.swift in Sources */,
-				60F24DFF1AF2B44200171945 /* DataModel.swift in Sources */,
+				60F24E051AF2EB5C00171945 /* FileManager.swift in Sources */,
+				60F24DFF1AF2B44200171945 /* DataObject.swift in Sources */,
+				60F24E031AF2EA6100171945 /* DataFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

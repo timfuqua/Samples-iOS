@@ -15,6 +15,8 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var firstTextField: UITextField!
   @IBOutlet weak var secondTextField: UITextField!
+  @IBOutlet weak var filenameTextField: UITextField!
+  @IBOutlet weak var newButton: UIButton!
   @IBOutlet weak var saveButton: UIButton!
   @IBOutlet weak var loadButton: UIButton!
   
@@ -36,6 +38,9 @@ class ViewController: UIViewController {
     fillOutData()
     view.endEditing(true)
     super.touchesBegan(touches, withEvent: event)
+  }
+  
+  @IBAction func newButtonPressed(sender: UIButton) {
   }
   
   @IBAction func saveButtonPressed(sender: UIButton) {
@@ -60,6 +65,10 @@ class ViewController: UIViewController {
   }
   
   private func updateTextView() {
+    fileContents.text = sampleData.debugDescription
+  }
+  
+  private func updateTextFields() {
     fileContents.text = sampleData.debugDescription
   }
   

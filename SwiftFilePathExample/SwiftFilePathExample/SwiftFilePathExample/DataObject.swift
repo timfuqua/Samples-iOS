@@ -1,5 +1,5 @@
 //
-//  DataModel.swift
+//  DataObject.swift
 //  SwiftFilePathExample
 //
 //  Created by Tim Fuqua on 4/30/15.
@@ -9,16 +9,15 @@
 import Foundation
 import SwiftFilePath
 
-class Data {
+class DataObject {
   
-  private let baseName: String = "Data"
-  private let fileExt: String = ".sav"
-  private let saveDir = Path.documentsDir
-  
+  var createdOnDate: NSDate? = nil
+  var objectName: String = ""
   var field1: String = ""
   var field2: String = ""
   
   init() {
+    createdOnDate = NSDate()
   }
   
   func save() {
@@ -35,9 +34,10 @@ class Data {
     if saveDir["\(baseName)\(fileExt)"].exists {
       let data = saveDir["\(baseName)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
       
-      if data.count == 2 {
-        field1 = data[0]
-        field2 = data[1]
+      if data.count == 3 {
+        objectName = data[0]
+        field1 = data[1]
+        field2 = data[2]
         return true
       }
     }
@@ -47,12 +47,13 @@ class Data {
   
 }
 
-extension Data: Printable {
+extension DataObject: Printable {
   
   var description: String {
     get {
       var dataDescription: String = ""
       
+      dataDescription += "Object Name: \(objectName)\t\t"
       dataDescription += "Field1: \(field1)\t\t"
       dataDescription += "Field2: \(field2)"
       
@@ -64,6 +65,7 @@ extension Data: Printable {
     get {
       var debugDescription: String = ""
       
+      debugDescription += "\(objectName)\n"
       debugDescription += "\(field1)\n"
       debugDescription += "\(field2)"
       
