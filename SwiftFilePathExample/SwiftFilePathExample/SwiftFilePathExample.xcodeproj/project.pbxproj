@@ -126,15 +126,15 @@
 			isa = PBXGroup;
 			children = (
 				60F24DCF1AF2ADCC00171945 /* AppDelegate.swift */,
-				60F24DFE1AF2B44200171945 /* DataObject.swift */,
 				60F24E021AF2EA6100171945 /* DataFile.swift */,
-				60F24E041AF2EB5C00171945 /* FileManager.swift */,
+				60F24DFE1AF2B44200171945 /* DataObject.swift */,
 				60F24E001AF2B4FF00171945 /* DelegateManager.swift */,
+				60F24E041AF2EB5C00171945 /* FileManager.swift */,
+				60F24DD11AF2ADCC00171945 /* ViewController.swift */,
 				60F24DD61AF2ADCC00171945 /* Images.xcassets */,
 				60F24DD81AF2ADCC00171945 /* LaunchScreen.xib */,
 				60F24DD31AF2ADCC00171945 /* Main.storyboard */,
 				60F24DCD1AF2ADCC00171945 /* Supporting Files */,
-				60F24DD11AF2ADCC00171945 /* ViewController.swift */,
 			);
 			path = SwiftFilePathExample;
 			sourceTree = "<group>";

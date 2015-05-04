@@ -11,7 +11,7 @@ import SwiftFilePath
 
 class ViewController: UIViewController {
   
-  var sampleData: Data = Data()
+  var sampleData: DataObject = DataObject()
   
   @IBOutlet weak var firstTextField: UITextField!
   @IBOutlet weak var secondTextField: UITextField!

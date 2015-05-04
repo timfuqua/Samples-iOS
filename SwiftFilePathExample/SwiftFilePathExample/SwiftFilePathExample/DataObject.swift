@@ -20,30 +20,30 @@ class DataObject {
     createdOnDate = NSDate()
   }
   
-  func save() {
-    if saveDir["\(baseName)\(fileExt)"].exists {
-      saveDir["\(baseName)\(fileExt)"].writeString(debugDescription)
-    }
-    else {
-      saveDir["\(baseName)\(fileExt)"].touch()
-      saveDir["\(baseName)\(fileExt)"].writeString(debugDescription)
-    }
-  }
-  
-  func load() -> Bool {
-    if saveDir["\(baseName)\(fileExt)"].exists {
-      let data = saveDir["\(baseName)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
-      
-      if data.count == 3 {
-        objectName = data[0]
-        field1 = data[1]
-        field2 = data[2]
-        return true
-      }
-    }
-    
-    return false
-  }
+//  func save() {
+//    if saveDir["\(baseName)\(fileExt)"].exists {
+//      saveDir["\(baseName)\(fileExt)"].writeString(debugDescription)
+//    }
+//    else {
+//      saveDir["\(baseName)\(fileExt)"].touch()
+//      saveDir["\(baseName)\(fileExt)"].writeString(debugDescription)
+//    }
+//  }
+//  
+//  func load() -> Bool {
+//    if saveDir["\(baseName)\(fileExt)"].exists {
+//      let data = saveDir["\(baseName)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
+//      
+//      if data.count == 3 {
+//        objectName = data[0]
+//        field1 = data[1]
+//        field2 = data[2]
+//        return true
+//      }
+//    }
+//    
+//    return false
+//  }
   
 }
 
