@@ -14,7 +14,9 @@ let str = "Hello, playground"
 let strMatches = matchesForRegexInText("[a-z]+ground$", str)
 println(strMatches)
 
-let filename = "Filename"
-let filenameMatches = matchesForRegexInText("[[0-9]+]$", filename)
+let filename = "Filename[1]"
+let filenameMatches = matchesForRegexInText("[(.*?)]", filename)
+//let filenameMatches = matchesForRegexInText("(?<=[)[^[.]+?(?=])", filename)
 println(filenameMatches)
 
+//(?<=\[)[^\[.]+?(?=\])
