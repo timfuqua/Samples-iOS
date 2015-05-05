@@ -2,34 +2,45 @@
 
 import UIKit
 
-let currentTime = NSDate()
+private func test1() {
+  let inputDateString: String = "2015-05-04 15:06:16"
+  //let inputDateString: String = ""
 
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.NoStyle, timeStyle: NSDateFormatterStyle.NoStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.NoStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.NoStyle, timeStyle: NSDateFormatterStyle.MediumStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.NoStyle, timeStyle: NSDateFormatterStyle.LongStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.NoStyle, timeStyle: NSDateFormatterStyle.FullStyle)
+  let inputDateFormatter = NSDateFormatter()
+  inputDateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.NoStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.MediumStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.LongStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.FullStyle)
+  var inputDate = inputDateFormatter.dateFromString(inputDateString)
 
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.NoStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.MediumStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.LongStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.FullStyle)
+  if inputDate != nil {
+    let outputDateStringFormatter = NSDateFormatter()
+    outputDateStringFormatter.dateFormat = "MM/dd"
+    var outputDate: String = outputDateStringFormatter.stringFromDate(inputDate!)
+  }
 
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.LongStyle, timeStyle: NSDateFormatterStyle.NoStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.LongStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.LongStyle, timeStyle: NSDateFormatterStyle.MediumStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.LongStyle, timeStyle: NSDateFormatterStyle.LongStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.LongStyle, timeStyle: NSDateFormatterStyle.FullStyle)
+  if inputDate != nil {
+    let outputTimeStringFormatter = NSDateFormatter()
+    outputTimeStringFormatter.dateFormat = "HH:mm:ss"
+    var outputTime: String = outputTimeStringFormatter.stringFromDate(inputDate!)
+  }
+}
 
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.FullStyle, timeStyle: NSDateFormatterStyle.NoStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.FullStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.FullStyle, timeStyle: NSDateFormatterStyle.MediumStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.FullStyle, timeStyle: NSDateFormatterStyle.LongStyle)
-NSDateFormatter.localizedStringFromDate(currentTime, dateStyle: NSDateFormatterStyle.FullStyle, timeStyle: NSDateFormatterStyle.FullStyle)
+private func test2() {
+  let inputDateString: String = "2015-05-04 15:06:16"
+  //let inputDateString: String = ""
+  
+  let inputDateFormatter = NSDateFormatter()
+  inputDateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+  
+  var inputDate = inputDateFormatter.dateFromString(inputDateString)
+  
+  let stringFromDate = NSDateFormatter.localizedStringFromDate(inputDate!, dateStyle: NSDateFormatterStyle.LongStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
+  let dateFromString = inputDateFormatter.dateFromString(stringFromDate) // can't be done
+  
+}
+
+
+
+
+
+test2()
+
