@@ -19,6 +19,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var newButton: UIButton!
   @IBOutlet weak var saveButton: UIButton!
   @IBOutlet weak var loadButton: UIButton!
+  @IBOutlet weak var deleteButton: UIButton!
   
   @IBOutlet weak var fileContents: UITextView!
   
@@ -64,6 +65,10 @@ class ViewController: UIViewController {
       sampleData = nil
     }
     updateTextView()
+  }
+  
+  @IBAction func deleteButtonPressed(sender: UIButton) {
+    FileManager.sharedInstance.delete(filenameTextField.text)
   }
   
   private func initializeTextFields() {

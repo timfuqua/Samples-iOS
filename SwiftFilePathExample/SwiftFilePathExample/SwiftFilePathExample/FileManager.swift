@@ -26,7 +26,11 @@ class FileManager {
     return _DateFormatter
   }
   
-  var active: DataObject? = nil
+  var active: DataObject? = nil {
+    didSet {
+      
+    }
+  }
   
   private let fileExt: String = ".sav"
   private let saveDir = Path.documentsDir
@@ -37,11 +41,11 @@ class FileManager {
   func save() {
     if active != nil {
       if saveDir["\(active!.objectName)\(fileExt)"].exists {
-        println("A file named " + saveDir["\(active!.objectName)\(fileExt)"].toString() + " already exists.")
+        println("A file named \(active!.objectName)\(fileExt) already exists.")
         let existingObject = loadDataObject(active!.objectName)
         
-        println("existingObject: \(existingObject!.createdOnDateString())")
-        println("active: \(active!.createdOnDateString())")
+//        println("existingObject: \(existingObject!.createdOnDateString())")
+//        println("active: \(active!.createdOnDateString())")
         
         if existingObject!.createdOnDateString() == active!.createdOnDateString() {
           println("Both files have the same creation date. Overwriting.")
@@ -110,7 +114,18 @@ class FileManager {
     return false
   }
   
-  func loadDataObject(inout object: DataObject?, fromFile: String) {
+  func delete(filename: String) -> Bool {
+    if saveDir["\(filename)\(fileExt)"].exists {
+      println("File named \(filename)\(fileExt) exists. Deleting.")
+      saveDir["\(filename)\(fileExt)"].remove()
+      return true
+    }
+    
+    println("File named \(filename)\(fileExt) not found. Nothing to delete.")
+    return false
+  }
+  
+  private func loadDataObject(inout object: DataObject?, fromFile: String) {
     if saveDir["\(fromFile)\(fileExt)"].exists && object != nil {
       let data = saveDir["\(fromFile)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
       
@@ -120,7 +135,7 @@ class FileManager {
     }
   }
   
-  func loadDataObject(fromFile: String) -> DataObject? {
+  private func loadDataObject(fromFile: String) -> DataObject? {
     if saveDir["\(fromFile)\(fileExt)"].exists {
       var tempObject = DataObject()
       let data = saveDir["\(fromFile)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
