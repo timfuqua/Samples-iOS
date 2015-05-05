@@ -10,7 +10,11 @@ import Foundation
 import SwiftFilePath
 
 private let _FileManagerSharedInstance = FileManager()
-private var _activeDataObject = DataObject()
+private let _DateFormatter: NSDateFormatter = {
+  var df = NSDateFormatter()
+  df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+  return df
+}()
 
 class FileManager {
   
@@ -18,13 +22,12 @@ class FileManager {
     return _FileManagerSharedInstance
   }
   
-  class var active: DataObject {
-    return _activeDataObject
+  class var dateFormatter: NSDateFormatter {
+    return _DateFormatter
   }
   
-//  var filenames: [String] = []
+  var active: DataObject? = nil
   
-//  private let baseName: String = "Data"
   private let fileExt: String = ".sav"
   private let saveDir = Path.documentsDir
   
@@ -32,104 +35,103 @@ class FileManager {
   }
   
   func save() {
-    if saveDir["\(FileManager.active.objectName)\(fileExt)"].exists {
-      let existingObject = loadDataObject(saveDir["\(FileManager.active.objectName)\(fileExt)"].toString())
-      
-      if existingObject.createdOnDate == FileManager.active.createdOnDate {
-        // overwrite
-        saveDir["\(FileManager.active.objectName)\(fileExt)"].writeString(FileManager.active.debugDescription)
-      }
-      else {
-        // save as disambiguated file
-        let sections = FileManager.active.objectName.componentsSeparatedByString("[")
+    if active != nil {
+      if saveDir["\(active!.objectName)\(fileExt)"].exists {
+        println("A file named " + saveDir["\(active!.objectName)\(fileExt)"].toString() + " already exists.")
+        let existingObject = loadDataObject(active!.objectName)
         
-        // original filename, no [x] in filename
-        if sections.count == 0 {
-          // rename
-          FileManager.active.objectName += "[1]"
-          // attempt to save with new name
-          save()
+        println("existingObject: \(existingObject!.createdOnDateString())")
+        println("active: \(active!.createdOnDateString())")
+        
+        if existingObject!.createdOnDateString() == active!.createdOnDateString() {
+          println("Both files have the same creation date. Overwriting.")
+          // overwrite
+          saveDir["\(active!.objectName)\(fileExt)"].writeString(active!.debugDescription)
         }
-          // already a disambiguated filename, contains [x]
-        else if sections.count == 2 {
-          let numberString = sections[1].stringByReplacingOccurrencesOfString("]", withString: "", options: .LiteralSearch, range: nil)
+        else {
+          println("The files have different creation dates. Disambiguating.")
+          // save as disambiguated file
+          let sections = active!.objectName.componentsSeparatedByString("[")
           
-          if let nextNumber = numberString.toInt() {
+          // original filename, no [x] in filename
+          if sections.count == 1 {
+            println("The file has not been disambiguated yet.")
             // rename
-            FileManager.active.objectName = sections[0] + "[\(nextNumber + 1)]"
+            active!.objectName += "[1]"
             // attempt to save with new name
             save()
           }
+          // already a disambiguated filename, contains [x]
+          else if sections.count == 2 {
+            println("The file has already been disambiguated before.")
+            let numberString = sections[1].stringByReplacingOccurrencesOfString("]", withString: "", options: .LiteralSearch, range: nil)
+            
+            if let nextNumber = numberString.toInt() {
+              // rename
+              active!.objectName = sections[0] + "[\(nextNumber + 1)]"
+              // attempt to save with new name
+              save()
+            }
+          }
+          else {
+            println("sections.count: \(sections.count)")
+          }
         }
       }
-    }
-    else {
-      saveDir["\(FileManager.active.objectName)\(fileExt)"].touch()
-      saveDir["\(FileManager.active.objectName)\(fileExt)"].writeString(FileManager.active.debugDescription)
+      else {
+        println("No file exists with this name. Saving.")
+        saveDir["\(active!.objectName)\(fileExt)"].touch()
+        saveDir["\(active!.objectName)\(fileExt)"].writeString(active!.debugDescription)
+      }
     }
   }
   
   func load(fromFile: String) -> Bool {
-    if saveDir["\(FileManager.active.objectName)\(fileExt)"].exists {
-      let data = saveDir["\(FileManager.active.objectName)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
-
-      if data.count == 4 {
-        let creationDateString = data[0]
-        FileManager.active.objectName = data[1]
-        FileManager.active.field1 = data[2]
-        FileManager.active.field2 = data[3]
-        return true
-      }
+    if active == nil {
+      active = DataObject()
     }
     
+    if saveDir["\(fromFile)\(fileExt)"].exists {
+      let data = saveDir["\(fromFile)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
+
+      if data.count == 4 {
+        active!.createdOnDate = FileManager.dateFormatter.dateFromString(data[0])
+        active!.objectName = data[1]
+        active!.field1 = data[2]
+        active!.field2 = data[3]
+        return true
+      }
+      
+      active = nil
+      return false
+    }
+    
+    active = nil
     return false
   }
   
-  func saveDataObject(object: DataObject) {
-    if saveDir["\(object.objectName)\(fileExt)"].exists {
-      let existingObject = loadDataObject(saveDir["\(object.objectName)\(fileExt)"].toString())
+  func loadDataObject(inout object: DataObject?, fromFile: String) {
+    if saveDir["\(fromFile)\(fileExt)"].exists && object != nil {
+      let data = saveDir["\(fromFile)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
       
-      if existingObject.createdOnDate == object.createdOnDate {
-        // overwrite
-        saveDir["\(object.objectName)\(fileExt)"].writeString(object.debugDescription)
+      if !object!.load(data) {
+        object = nil
       }
-      else {
-        // save as disambiguated file
-        let sections = object.objectName.componentsSeparatedByString("[")
-        
-        // original filename, no [x] in filename
-        if sections.count == 0 {
-          // rename
-          object.objectName += "[1]"
-          // attempt to save with new name
-          saveDataObject(object)
-        }
-        // already a disambiguated filename, contains [x]
-        else if sections.count == 2 {
-          let numberString = sections[1].stringByReplacingOccurrencesOfString("]", withString: "", options: .LiteralSearch, range: nil)
-          
-          if let nextNumber = numberString.toInt() {
-            // rename
-            object.objectName = sections[0] + "[\(nextNumber + 1)]"
-            // attempt to save with new name
-            saveDataObject(object)
-          }
-        }
-      }
-    }
-    else {
-      saveDir["\(object.objectName)\(fileExt)"].touch()
-      saveDir["\(object.objectName)\(fileExt)"].writeString(object.debugDescription)
     }
   }
   
-  func loadDataObject(inout object: DataObject, fromFile: String) {
+  func loadDataObject(fromFile: String) -> DataObject? {
+    if saveDir["\(fromFile)\(fileExt)"].exists {
+      var tempObject = DataObject()
+      let data = saveDir["\(fromFile)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
+      
+      if tempObject.load(data) {
+        println("tempObject loaded successfully. Returning tempObject.")
+        return tempObject
+      }
+    }
     
-  }
-  
-  func loadDataObject(fromFile: String) -> DataObject {
-    
-    return DataObject()
+    return nil
   }
   
 }

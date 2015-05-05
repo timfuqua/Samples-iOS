@@ -19,31 +19,27 @@ class DataObject {
   init() {
     createdOnDate = NSDate()
   }
+
+  func load(fromData: [String]) -> Bool {
+    
+    if fromData.count == 4 {
+      createdOnDate = FileManager.dateFormatter.dateFromString(fromData[0])
+      objectName = fromData[1]
+      field1 = fromData[2]
+      field2 = fromData[3]
+      return true
+    }
+    else {
+      return false
+    }
+  }
   
-//  func save() {
-//    if saveDir["\(baseName)\(fileExt)"].exists {
-//      saveDir["\(baseName)\(fileExt)"].writeString(debugDescription)
-//    }
-//    else {
-//      saveDir["\(baseName)\(fileExt)"].touch()
-//      saveDir["\(baseName)\(fileExt)"].writeString(debugDescription)
-//    }
-//  }
-//  
-//  func load() -> Bool {
-//    if saveDir["\(baseName)\(fileExt)"].exists {
-//      let data = saveDir["\(baseName)\(fileExt)"].readString()!.componentsSeparatedByString("\n")
-//      
-//      if data.count == 3 {
-//        objectName = data[0]
-//        field1 = data[1]
-//        field2 = data[2]
-//        return true
-//      }
-//    }
-//    
-//    return false
-//  }
+  func createdOnDateString() -> String {
+    if createdOnDate != nil {
+      return FileManager.dateFormatter.stringFromDate(createdOnDate!)
+    }
+    return ""
+  }
   
 }
 
@@ -53,6 +49,8 @@ extension DataObject: Printable {
     get {
       var dataDescription: String = ""
       
+      
+      dataDescription += "Created On: \(FileManager.dateFormatter.stringFromDate(createdOnDate!))\t\t"
       dataDescription += "Object Name: \(objectName)\t\t"
       dataDescription += "Field1: \(field1)\t\t"
       dataDescription += "Field2: \(field2)"
@@ -65,6 +63,7 @@ extension DataObject: Printable {
     get {
       var debugDescription: String = ""
       
+      debugDescription += "\(FileManager.dateFormatter.stringFromDate(createdOnDate!))\n"
       debugDescription += "\(objectName)\n"
       debugDescription += "\(field1)\n"
       debugDescription += "\(field2)"

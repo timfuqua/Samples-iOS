@@ -11,7 +11,7 @@ import SwiftFilePath
 
 class ViewController: UIViewController {
   
-  var sampleData: DataObject = DataObject()
+  var sampleData: DataObject? = nil
   
   @IBOutlet weak var firstTextField: UITextField!
   @IBOutlet weak var secondTextField: UITextField!
@@ -29,7 +29,10 @@ class ViewController: UIViewController {
     println(Path.documentsDir.toString())
     println(Path.cacheDir.toString())
     println(Path.temporaryDir.toString())
-    
+
+    sampleData = DataObject()
+    println(sampleData!.description)
+
     initializeTextFields()
     initializeFileContentsTextView()
   }
@@ -41,15 +44,25 @@ class ViewController: UIViewController {
   }
   
   @IBAction func newButtonPressed(sender: UIButton) {
+    clearOutAllData()
+    sampleData = DataObject()
   }
   
   @IBAction func saveButtonPressed(sender: UIButton) {
     fillOutData()
-    sampleData.save()
+    FileManager.sharedInstance.active = sampleData
+    FileManager.sharedInstance.save()
   }
   
   @IBAction func loadButtonPressed(sender: UIButton) {
-    sampleData.load()
+    fillOutData()
+    if FileManager.sharedInstance.load(filenameTextField.text) {
+      sampleData = FileManager.sharedInstance.active
+      updateTextFields()
+    }
+    else {
+      sampleData = nil
+    }
     updateTextView()
   }
   
@@ -65,16 +78,40 @@ class ViewController: UIViewController {
   }
   
   private func updateTextView() {
-    fileContents.text = sampleData.debugDescription
+    if sampleData != nil {
+      println(sampleData!.description)
+      fileContents.text = sampleData!.debugDescription
+    }
+    else {
+      fileContents.text = ""
+    }
   }
   
   private func updateTextFields() {
-    fileContents.text = sampleData.debugDescription
+    if sampleData != nil {
+      firstTextField.text = sampleData!.field1
+      secondTextField.text = sampleData!.field2
+      filenameTextField.text = sampleData!.objectName
+    }
+    else {
+      firstTextField.text = ""
+      secondTextField.text = ""
+      filenameTextField.text = ""
+    }
   }
   
   private func fillOutData() {
-    sampleData.field1 = firstTextField.text
-    sampleData.field2 = secondTextField.text
+    if sampleData != nil {
+      sampleData!.field1 = firstTextField.text
+      sampleData!.field2 = secondTextField.text
+      sampleData!.objectName = filenameTextField.text
+    }
+  }
+  
+  private func clearOutAllData() {
+    sampleData = nil
+    updateTextFields()
+    updateTextView()
   }
   
 }
