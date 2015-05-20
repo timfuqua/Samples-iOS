@@ -32,10 +32,21 @@ class FileManager {
     }
   }
   
+//  var filenames: [String] = {
+//    let allFiles = saveDir.contents!
+//    let allSaveFiles: [String] = allFiles.filter( { $0.ext == "sav" } ).map( { return $0.toString() } )
+//    return allSaveFiles
+//  }()
+  
   private let fileExt: String = ".sav"
   private let saveDir = Path.documentsDir
   
   init() {
+    
+    let filenames = getFilenames()
+    for filename in filenames {
+      println("\(filename)\n")
+    }
   }
   
   func save() {
@@ -147,6 +158,12 @@ class FileManager {
     }
     
     return nil
+  }
+  
+  private func getFilenames() -> [String] {
+    let allFiles = saveDir.contents!
+    let allSaveFiles: [String] = allFiles.filter( { $0.ext == "sav" } ).map( { return $0.toString() } )
+    return allSaveFiles
   }
   
 }
