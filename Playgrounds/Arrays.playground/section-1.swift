@@ -22,11 +22,28 @@ zoo[2][0]
 zoo[2][1]
 zoo[2][2]
 
-for animalGroup in zoo {
-    
+func test01() {
+  for animalGroup in zoo {
     for animalName in animalGroup {
-        
-        print( "\(animalName) " )
+      print("\(animalName)")
     }
+  }
 }
+
+func test02() {
+  let someMammals: [String] = Array(mammals[1...2])
+  
+  println(someMammals)
+}
+
+func test03() {
+  println(zoo[1...2])
+}
+
+test01()
+test02()
+test03()
+
+
+
 
