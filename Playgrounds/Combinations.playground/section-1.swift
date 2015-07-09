@@ -234,13 +234,19 @@ func test02() {
   printCombinationsForSampleSize(numbers, 3)
 }
 
+func test03() {
+  var numbers: [Int] = [1,2,3]
+  
+  printCombinationsForSampleSize(numbers, 3)
+}
+
 
 
 
 
 //test01()
-test02()
-
+//test02()
+test03()
 
 
 
