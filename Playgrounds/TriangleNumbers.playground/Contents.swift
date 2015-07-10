@@ -145,7 +145,27 @@ postfix func ++(inout combination: Combination) -> Combination {
   return originalCombination
 }
 
-struct CombinationSettings {
+func ==(lhs: CombinationSettings, rhs: CombinationSettings) -> Bool {
+  return lhs.lowerBound == rhs.lowerBound &&
+    lhs.upperBound == rhs.upperBound &&
+    lhs.numValues == rhs.numValues
+}
+
+func ==(lhs: Combination, rhs: Combination) -> Bool {
+  if lhs.settings != rhs.settings {
+    return false
+  }
+  
+  for i in 0..<lhs.values.count {
+    if lhs.values[i] != rhs.values[i] {
+      return false
+    }
+  }
+  
+  return true
+}
+
+struct CombinationSettings: Equatable {
   var lowerBound: Int
   var upperBound: Int
   var numValues: Int
@@ -157,7 +177,7 @@ struct CombinationSettings {
   }
 }
 
-struct Combination {
+struct Combination: Equatable {
   var settings: CombinationSettings
   var values: [Int] = []
   
@@ -201,103 +221,145 @@ struct Combination {
     
     return nil
   }
+  
+  mutating func leftShift(times: Int=1) {
+    if times < 1 {
+      return
+    }
+    
+    func leftShiftOnce() {
+      if values.count > 1 {
+        let firstValue: Int = values[0]
+        
+        for i in 0..<values.count-1 {
+          values[i] = values[i+1]
+        }
+        values[values.count-1] = firstValue
+      }
+    }
+    
+    for _ in 0..<times {
+      leftShiftOnce()
+    }
+  }
+  
+  mutating func rightShift(times: Int=1) {
+    if times < 1 {
+      return
+    }
+    
+    func rightShiftOnce() {
+      if values.count > 1 {
+        let lastValue: Int = values[values.count-1]
+        
+        for i in 0..<values.count-1 {
+          values[values.count-(i+1)] = values[values.count-(i+2)]
+        }
+        values[0] = lastValue
+      }
+    }
+    
+    for _ in 0..<times {
+      rightShiftOnce()
+    }
+  }
 }
 
 func createLowestCombination(settings: CombinationSettings) -> Combination {
-  var lowestPerm: Combination = Combination(settings: settings)
+  var lowestComb: Combination = Combination(settings: settings)
   
-  for i in 0..<lowestPerm.settings.numValues {
-    lowestPerm.values.append(lowestPerm.settings.lowerBound)
+  for i in 0..<lowestComb.settings.numValues {
+    lowestComb.values.append(lowestComb.settings.lowerBound)
   }
   
-  return lowestPerm
+  return lowestComb
 }
 
 func createHighestCombination(settings: CombinationSettings) -> Combination {
-  var highestPerm: Combination = Combination(settings: settings)
+  var highestComb: Combination = Combination(settings: settings)
   
-  for i in 0..<highestPerm.settings.numValues {
-    highestPerm.values.append(highestPerm.settings.upperBound)
+  for i in 0..<highestComb.settings.numValues {
+    highestComb.values.append(highestComb.settings.upperBound)
   }
   
-  return highestPerm
+  return highestComb
 }
 
 func test01() {
   println("Create a 3 digit combination and display it's value")
-  var aPerm = Combination(settings: CombinationSettings(lowerBound: 1, upperBound: 3, numValues: 3), values: [1,2,3])
+  var aComb = Combination(settings: CombinationSettings(lowerBound: 1, upperBound: 3, numValues: 3), values: [1,2,3])
   
-  println(aPerm.toString())
+  println(aComb.toString())
 }
 
 func generateAllCombinations(settings: CombinationSettings) -> [Combination] {
-  var allPerms: [Combination] = []
-  let firstPerm = createLowestCombination(settings)
-  let lastPerm = createHighestCombination(settings)
-  var incrementingPerm = firstPerm
+  var allCombs: [Combination] = []
+  let firstComb = createLowestCombination(settings)
+  let lastComb = createHighestCombination(settings)
+  var incrementingComb = firstComb
 
-  while incrementingPerm.toString() != lastPerm.toString() {
-    allPerms.append(incrementingPerm++)
+  while incrementingComb.toString() != lastComb.toString() {
+    allCombs.append(incrementingComb++)
   }
-  allPerms.append(lastPerm)
+  allCombs.append(lastComb)
   
-  return allPerms
+  return allCombs
 }
 
 func test02() {
   println("Create a 3 digit combination and perform some increment operations")
-  var aPerm = Combination(settings: CombinationSettings(lowerBound: 0, upperBound: 1, numValues: 3), values: [0,0,0])
+  var aComb = Combination(settings: CombinationSettings(lowerBound: 0, upperBound: 1, numValues: 3), values: [0,0,0])
   
   println("should be {0,0,0}")
-  println(aPerm.toString())
+  println(aComb.toString())
   
   println("should be {0,0,1}")
-  aPerm++
-  println(aPerm.toString())
+  aComb++
+  println(aComb.toString())
   
   println("should print out {0,0,1} first, but will be {0,1,0} after line executes")
-  println(aPerm++.toString())
-  println(aPerm.toString())
+  println(aComb++.toString())
+  println(aComb.toString())
 }
 
 func test03() {
   println("Determine all the 3 digit combinations of [0,1]")
-  var allPerms: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 0, upperBound: 1, numValues: 3))
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 0, upperBound: 1, numValues: 3))
   
-  println("Total number of combinations: \(allPerms.count)")
-  println(reduceWithDelimiter(allPerms.map({ $0.toString() }), ", "))
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
 }
 
 func test04() {
   println("Determine all the 3 digit combinations of [1,3]")
-  var allPerms: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 1, upperBound: 3, numValues: 3))
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 1, upperBound: 3, numValues: 3))
   
-  println("Total number of combinations: \(allPerms.count)")
-  println(reduceWithDelimiter(allPerms.map({ $0.toString() }), ", "))
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
 }
 
 func test05() {
   println("Determine all the 3 digit combinations of [1,4]")
-  var allPerms: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 1, upperBound: 4, numValues: 3))
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 1, upperBound: 4, numValues: 3))
   
-  println("Total number of combinations: \(allPerms.count)")
-  println(reduceWithDelimiter(allPerms.map({ $0.toString() }), ", "))
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
 }
 
 // takes in a list of combinations that presumably was generated using the
 // generateAllCombinations function, and returns an array of indices of where
 // the shift invariant combinations are. Shift invariant combinations are of the
 // form {x,x,x,...,x}, where every value in the tuple is the same.
-func getShiftInvariantIndices(fromPermList: [Combination]) -> [Int] {
+func getShiftInvariantIndices(fromCombList: [Combination]) -> [Int] {
   // if the supplied list has no combinations, return an empty set
-  if fromPermList.count == 0 {
+  if fromCombList.count == 0 {
     return []
   }
   
   // if the supplied list has exactly one combination, which would be the case
   // if the list was generated with lowerBound = upperBound, then the only entry
   // is a shift invariant combination
-  if fromPermList.count == 1 {
+  if fromCombList.count == 1 {
     return [0]
   }
   
@@ -308,11 +370,11 @@ func getShiftInvariantIndices(fromPermList: [Combination]) -> [Int] {
   // The first combination should be shift invariant with a value of lowerBound
   // and the last combination should be shift invariant with a value of
   // upperBound, but that can be done only as an assurance test.
-  var currentValue: Int = fromPermList[0].settings.lowerBound
+  var currentValue: Int = fromCombList[0].settings.lowerBound
   var shiftInvariantIndices: [Int] = []
   
-  for i in 0..<fromPermList.count {
-    if let shiftInvariantValue = fromPermList[i].isShiftInvariant() {
+  for i in 0..<fromCombList.count {
+    if let shiftInvariantValue = fromCombList[i].isShiftInvariant() {
       assert(shiftInvariantValue == currentValue, "Found a shift invariant, but it's value was expected to be \(currentValue) and is instead \(shiftInvariantValue).")
       currentValue++
       shiftInvariantIndices.append(i)
@@ -324,15 +386,15 @@ func getShiftInvariantIndices(fromPermList: [Combination]) -> [Int] {
 
 func test06() {
   println("Determine all the 3 digit combinations of [1,4], and determine the indices of the shift invariant combinations")
-  var allPerms: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 1, upperBound: 4, numValues: 3))
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 1, upperBound: 4, numValues: 3))
   
-  println("Total number of combinations: \(allPerms.count)")
-  println(reduceWithDelimiter(allPerms.map({ $0.toString() }), ", "))
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
 
-  var shiftInvariantIndices = getShiftInvariantIndices(allPerms)
+  var shiftInvariantIndices = getShiftInvariantIndices(allCombs)
   println("Total number of shift invariant combinations: \(shiftInvariantIndices.count)")
   for i in 0..<shiftInvariantIndices.count {
-    println("At index \(shiftInvariantIndices[i]): " + allPerms[shiftInvariantIndices[i]].toString())
+    println("At index \(shiftInvariantIndices[i]): " + allCombs[shiftInvariantIndices[i]].toString())
   }
   
   println()
@@ -340,15 +402,15 @@ func test06() {
 
 func testFindShiftInvariance(lowerBound: Int, upperBound: Int, numValues: Int) {
   println("Determine all the \(numValues) digit combinations of [\(lowerBound),\(upperBound)], and determine the indices of the shift invariant combinations")
-  var allPerms: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: lowerBound, upperBound: upperBound, numValues: numValues))
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: lowerBound, upperBound: upperBound, numValues: numValues))
   
-  println("Total number of combinations: \(allPerms.count)")
-  println(reduceWithDelimiter(allPerms.map({ $0.toString() }), ", "))
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
   
-  var shiftInvariantIndices = getShiftInvariantIndices(allPerms)
+  var shiftInvariantIndices = getShiftInvariantIndices(allCombs)
   println("Total number of shift invariant combinations: \(shiftInvariantIndices.count)")
   for i in 0..<shiftInvariantIndices.count {
-    println("At index \(shiftInvariantIndices[i]): " + allPerms[shiftInvariantIndices[i]].toString())
+    println("At index \(shiftInvariantIndices[i]): " + allCombs[shiftInvariantIndices[i]].toString())
   }
   
   println()
@@ -365,9 +427,131 @@ func test07() {
   }
 }
 
-//func removeShiftVariants(fromPermList: [Combination]) -> [Combination] {
-//  
-//}
+func test08() {
+  var someComb = Combination(settings: CombinationSettings(lowerBound: 1, upperBound: 3, numValues: 3), values: [1,2,3])
+  someComb.toString()
+  someComb.leftShift()
+  someComb.toString()
+  someComb.leftShift()
+  someComb.toString()
+  someComb.leftShift()
+  someComb.toString()
+  
+  var otherComb = Combination(settings: CombinationSettings(lowerBound: 1, upperBound: 3, numValues: 6), values: [1,1,1,2,2,2])
+  otherComb.toString()
+  otherComb.rightShift()
+  otherComb.toString()
+  otherComb.rightShift()
+  otherComb.toString()
+  otherComb.rightShift()
+  otherComb.toString()
+}
+
+func generateShiftVariants(combination: Combination) -> [Combination] {
+  var shiftVariants: [Combination] = []
+  
+  if combination.isShiftInvariant() == nil {
+    var copy = combination
+    for _ in 0..<copy.values.count-1 {
+      copy.leftShift()
+      shiftVariants.append(copy)
+    }
+  }
+  
+  return shiftVariants
+}
+
+func removeShiftVariants(fromCombList: [Combination]) -> ([Combination],[Int]) {
+//  println()
+//  println("removeShiftVariants")
+//  println("fromCombList.count: \(fromCombList.count)")
+  
+  var trimmedCombList: [Combination] = []
+  var isShiftVariantList: [Bool] = []
+  
+  for _ in 0..<fromCombList.count {
+    isShiftVariantList.append(false)
+  }
+//  println("isShiftVariantList.count: \(isShiftVariantList.count)")
+  
+  var shiftVariantIndices: [Int] = []
+
+  for i in 0..<fromCombList.count {
+    if !isShiftVariantList[i] {
+//      println("!isShiftVariantList[\(i)]: \(!isShiftVariantList[i])")
+      if fromCombList[i].isShiftInvariant() == nil {
+//        println("fromCombList[i].isShiftInvariant() == nil")
+        var shiftVariants = generateShiftVariants(fromCombList[i])
+        for shiftVariant in shiftVariants {
+          for j in i..<fromCombList.count {
+            if fromCombList[j] == shiftVariant {
+              shiftVariantIndices.append(j)
+              isShiftVariantList[j] = true
+            }
+          }
+        }
+      }
+      trimmedCombList.append(fromCombList[i])
+    }
+  }
+  
+//  println("trimmedCombList.count: \(trimmedCombList.count)")
+
+  return (trimmedCombList,shiftVariantIndices.sorted(<))
+//  return ([],[])
+}
+
+func test09() {
+  println("Determine all the 3 digit combinations of [0,1]")
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 0, upperBound: 1, numValues: 3))
+  
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
+  
+  func testFindShiftVariantsOfCombination(atIndex index: Int) {
+    var shiftVariants = generateShiftVariants(allCombs[index])
+    println("Total number of Shift Variants of Combination \(allCombs[index].toString()): \(shiftVariants.count)")
+    println(reduceWithDelimiter(shiftVariants.map({ $0.toString() }), ", "))
+  }
+  
+  testFindShiftVariantsOfCombination(atIndex: 1)
+  testFindShiftVariantsOfCombination(atIndex: 3)
+}
+
+func test10() {
+  println("Determine all the 3 digit combinations of [0,1]")
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 0, upperBound: 1, numValues: 3))
+  
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
+  
+  let trimmedResults = removeShiftVariants(allCombs)
+  println("Total number of trimmed combinations: \(trimmedResults.0.count)")
+  println(reduceWithDelimiter(trimmedResults.0.map({ $0.toString() }), ", "))
+  println("Number of Shift Variants: \(trimmedResults.1.count)")
+  println(trimmedResults.1)
+}
+
+func test11() {
+  println("Determine all the 3 digit combinations of [1,6]")
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 1, upperBound: 6, numValues: 3))
+  
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
+  
+  let trimmedResults = removeShiftVariants(allCombs)
+  println("Total number of trimmed combinations: \(trimmedResults.0.count)")
+  
+  var shiftInvariantIndices = getShiftInvariantIndices(allCombs)
+  println("Total number of shift invariant combinations: \(shiftInvariantIndices.count)")
+  for i in 0..<shiftInvariantIndices.count {
+    println("At index \(shiftInvariantIndices[i]): " + allCombs[shiftInvariantIndices[i]].toString())
+  }
+  
+  println(reduceWithDelimiter(trimmedResults.0.map({ $0.toString() }), ", "))
+  println("Number of Shift Variants: \(trimmedResults.1.count)")
+  println(trimmedResults.1)
+}
 
 //test01()
 //test02()
@@ -376,9 +560,10 @@ func test07() {
 //test05()
 //test06()
 //test07()
-
-
-
+//test08()
+//test09()
+//test10()
+test11()
 
 
 
