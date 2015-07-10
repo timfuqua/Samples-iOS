@@ -103,14 +103,29 @@ test1()
 test2()
 test3()
 test4()
+//test5()
 
 
+var doubles: [Double] = [0.5, 1.1, 0.9, 0.7, 1.0, 0.6, 0.6, 0.8]
 
+func test10() {
+  let minVal = doubles.reduce(DBL_MAX, combine: min)
+  println(minVal)
+}
 
+func test11() {
+  let maxVal = doubles.reduce(DBL_MIN, combine: max)
+  println(maxVal)
+}
 
+func test12() {
+  let avgVal = doubles.reduce(0, combine: +)/Double(doubles.count)
+  println(avgVal)
+}
 
-
-
+test10()
+test11()
+test12()
 
 
 
