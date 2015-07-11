@@ -265,6 +265,20 @@ struct Combination: Equatable {
   }
 }
 
+func combinationListsEqual(lhs: [Combination], rhs: [Combination]) -> Bool {
+  if lhs.count != rhs.count {
+    return false
+  }
+  
+  for i in 0..<lhs.count {
+    if lhs[i] != rhs[i] {
+      return false
+    }
+  }
+  
+  return true
+}
+
 func createLowestCombination(settings: CombinationSettings) -> Combination {
   var lowestComb: Combination = Combination(settings: settings)
   
@@ -553,6 +567,77 @@ func test11() {
   println(trimmedResults.1)
 }
 
+//func generateAllCombinations(settings: CombinationSettings) -> [Combination] {
+//  var allCombs: [Combination] = []
+//  let firstComb = createLowestCombination(settings)
+//  let lastComb = createHighestCombination(settings)
+//  var incrementingComb = firstComb
+//  
+//  while incrementingComb.toString() != lastComb.toString() {
+//    allCombs.append(incrementingComb++)
+//  }
+//  allCombs.append(lastComb)
+//  
+//  return allCombs
+//}
+
+func generateAll3DigitCombinationsMattMethod(settings: CombinationSettings) -> [Combination] {
+  var allCombs: [Combination] = []
+  
+  for i in settings.lowerBound...settings.upperBound {
+    allCombs.append(Combination(settings: settings, values: [i,i,i]))
+    
+    for j in i...settings.upperBound {
+      if i != 6 {
+        for k in i+1...settings.upperBound {
+          allCombs.append(Combination(settings: settings, values: [i,j,k]))
+        }
+      }
+    }
+  }
+  
+  return allCombs
+}
+
+func test12() {
+  println("Determine all the 3 digit combinations of [1,6], using Matt's method")
+  var allCombs: [Combination] = generateAll3DigitCombinationsMattMethod(CombinationSettings(lowerBound: 1, upperBound: 6, numValues: 3))
+  
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
+}
+
+func test13() {
+  println("Determine all the 3 digit combinations of [1,6]")
+  var allCombs: [Combination] = generateAllCombinations(CombinationSettings(lowerBound: 1, upperBound: 6, numValues: 3))
+  
+  println("Total number of combinations: \(allCombs.count)")
+  println(reduceWithDelimiter(allCombs.map({ $0.toString() }), ", "))
+  
+  let trimmedResults = removeShiftVariants(allCombs)
+  println("Total number of trimmed combinations: \(trimmedResults.0.count)")
+  
+  var shiftInvariantIndices = getShiftInvariantIndices(allCombs)
+  println("Total number of shift invariant combinations: \(shiftInvariantIndices.count)")
+  for i in 0..<shiftInvariantIndices.count {
+    println("At index \(shiftInvariantIndices[i]): " + allCombs[shiftInvariantIndices[i]].toString())
+  }
+  
+  println(reduceWithDelimiter(trimmedResults.0.map({ $0.toString() }), ", "))
+  println("Number of Shift Variants: \(trimmedResults.1.count)")
+  println(trimmedResults.1)
+
+  
+  println("Determine all the 3 digit combinations of [1,6], using Matt's method")
+  var mattsCombs: [Combination] = generateAll3DigitCombinationsMattMethod(CombinationSettings(lowerBound: 1, upperBound: 6, numValues: 3))
+  
+  println("Total number of Matt's combinations: \(mattsCombs.count)")
+  println(reduceWithDelimiter(mattsCombs.map({ $0.toString() }), ", "))
+  
+  var listsEqual: Bool = combinationListsEqual(trimmedResults.0, mattsCombs)
+  println("Is the trimmed list equal to Matt's list? \(listsEqual)")
+}
+
 //test01()
 //test02()
 //test03()
@@ -563,9 +648,9 @@ func test11() {
 //test08()
 //test09()
 //test10()
-test11()
-
-
+//test11()
+//test12()
+//test13()
 
 
 
