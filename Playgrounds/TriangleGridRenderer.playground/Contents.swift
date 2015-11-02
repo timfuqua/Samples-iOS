@@ -92,7 +92,7 @@ func createTriangleAtGridCoord(#x: Int, #y: Int, withSideLength sideLength: CGFl
     tri.sideLength = sideLength
     tri.orientation = (x+y)%2 == 0 ? .Up : .Down
     let k: CGFloat = tri.orientation! == .Up ? 2*tri.apothem! : tri.apothem!
-    tri.center = CGPointMake((CGFloat(x+1)/2)*tri.sideLength!, k + 3*CGFloat(y)*tri.sideLength!)
+    tri.center = CGPointMake((CGFloat(x+1)/2)*tri.sideLength!, k + 3*CGFloat(y)*tri.apothem!)
     tri.strokeColor = strokeColor
     tri.fillColor = fillColor
     
@@ -176,29 +176,61 @@ func testDrawTriangle(#sideLength: CGFloat) {
   println()
 }
 
-func testDrawTriangleRow(#sideLength: CGFloat, startX: Int, endX: Int, y: Int) {
-  println("Create a row of triangles at grid coord (\(startX),\(y)) to (\(endX),\(y)) with side length of \(sideLength) and draw it to the graphics context")
-  let tri = createTriangleAtGridCoord(x: 0, y: 0, withSideLength: sideLength)
+func testDrawTriangleRow(#sideLength: CGFloat, #startX: Int, #endX: Int, #y: Int) {
+  assert(sideLength > 0, "Side length must be non-negative")
+  assert(startX >= 0, "Starting x coord must be non-negative")
+  assert(endX >= 0, "Ending x coord must be non-negative")
+  assert(endX > startX, "Ending x coord must be greater than starting x coord")
+  assert(y >= 0, "Row must be non-negative")
   
-  let size = CGSize(width: sideLength, height: sideLength)
-  
-  UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-  let context = UIGraphicsGetCurrentContext()
-
-  tri.draw()
-  
-  //This code must always be at the end of the playground
-  let image = UIGraphicsGetImageFromCurrentImageContext()
-  UIGraphicsEndImageContext()
-  
-  println()
+  if sideLength > 0 && startX >= 0 && endX >= 0 && endX > startX && y >= 0 {
+    println("Create a row of triangles at grid coords (\(startX),\(y)) to (\(endX),\(y)) with side length of \(sideLength) and draw it to the graphics context")
+    
+    var grid: [Triangle] = []
+    
+    for i in startX...endX {
+      grid.append(createTriangleAtGridCoord(x: i, y: y, withSideLength: sideLength))
+    }
+    
+//    let size = CGSize(width: (CGFloat(endX-startX+2)*grid[0].sideLength!)/2, height: CGFloat(3*grid[0].apothem!))
+    let size = CGSize(width: 100, height: 100)
+    
+    UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+    let context = UIGraphicsGetCurrentContext()
+    
+    for tri in grid {
+      tri.draw()
+    }
+    
+    //This code must always be at the end of the playground
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    
+    println()
+  }
 }
 
 func drawTriangleGrid() {
-  let size = CGSize(width: 120, height: 200)
+  
+  var grid: [Triangle] = []
+  
+  let sideLength: CGFloat = 30
+  let maxGridX: Int = 12
+  let maxGridY: Int = 7
+  for i in 0..<maxGridX {
+    for j in 0..<maxGridY {
+      grid.append(createTriangleAtGridCoord(x: i, y: j, withSideLength: sideLength, fillColor: UIColor.orangeColor()))
+    }
+  }
+  
+  let size = CGSize(width: 200, height: 200)
   
   UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
   let context = UIGraphicsGetCurrentContext()
+  
+  for tri in grid {
+    tri.draw()
+  }
   
   //This code must always be at the end of the playground
   let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -208,5 +240,7 @@ func drawTriangleGrid() {
 
 //testTriangleSideLengths()
 //testDrawTriangle(sideLength: 30)
+//testDrawTriangleRow(sideLength: 30, startX: 0, endX: 3, y: 0)
+//testDrawTriangleRow(sideLength: 30, startX: 0, endX: 3, y: 1)
 
-//drawTriangleGrid()
+drawTriangleGrid()
