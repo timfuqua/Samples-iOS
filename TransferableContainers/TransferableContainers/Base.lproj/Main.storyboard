@@ -135,6 +135,10 @@
                             <constraint firstItem="TW5-Zo-pWZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hxD-PY-z0s"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftCarsContainerView" destination="3Cd-06-w4U" id="0pO-0d-rGN"/>
+                        <outlet property="rightCarsContainerView" destination="Ddq-os-b7b" id="ZSD-fL-b2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -283,6 +287,9 @@
                             <constraint firstItem="IM2-B0-RFD" firstAttribute="centerX" secondItem="wv4-il-DjH" secondAttribute="centerX" id="jrf-Q8-nf4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="IM2-B0-RFD" id="M2j-aO-agZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66N-N1-Z5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,6 +406,9 @@
                             <constraint firstItem="OfC-jZ-WaI" firstAttribute="centerY" secondItem="hb1-PJ-CR2" secondAttribute="centerY" id="jW5-F2-r1S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="OfC-jZ-WaI" id="LKV-O1-bBE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qsw-mT-sOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

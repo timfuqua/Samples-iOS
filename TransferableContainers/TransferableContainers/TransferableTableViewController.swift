@@ -26,7 +26,11 @@ class TransferableTableViewController: UIViewController {
   /// The data source of the table view
   var tableViewDataSource: [Car]? = nil
   
+  var longPressGestureRecognizer: UILongPressGestureRecognizer!
+  var transferableController: TransferableController!
+  
   // MARK: @IBOutlets
+  @IBOutlet weak var tableView: UITableView!
   
   // MARK: init
   
@@ -34,6 +38,9 @@ class TransferableTableViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: Selector(stringLiteral: "longPressGestureRecognized"))
+    tableView.addGestureRecognizer(longPressGestureRecognizer)
   }
 
   // MARK: @IBActions
@@ -87,8 +94,10 @@ extension TransferableTableViewController: UITableViewDataSource {
 //  
 //  // Individual rows can opt out of having the -editing property set for them. If not implemented, all rows are assumed to be editable.
 //  @available(iOS 2.0, *)
-//  optional public func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
-//  
+  func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    return true
+  }
+
 //  // Moving/reordering
 //  
 //  // Allows the reorder accessory view to optionally be shown for a particular row. By default, the reorder control will be shown only if the datasource implements -tableView:moveRowAtIndexPath:toIndexPath:
@@ -108,11 +117,18 @@ extension TransferableTableViewController: UITableViewDataSource {
 //  // Not called for edit actions using UITableViewRowAction - the action's handler will be invoked instead
 //  @available(iOS 2.0, *)
 //  optional public func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
-//  
+//
 //  // Data manipulation - reorder / moving support
 //  
 //  @available(iOS 2.0, *)
-//  optional public func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath)
+  func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+    precondition(tableViewDataSource != nil)
+    
+    if let movingItem = tableViewDataSource?.removeAtIndex(sourceIndexPath.row) {
+      tableViewDataSource?.insert(movingItem, atIndex: destinationIndexPath.row)
+      tableView.reloadData()
+    }
+  }
   
 }
 
@@ -235,5 +251,27 @@ extension TransferableTableViewController: UITableViewDelegate {
 //  optional public func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator)
 //  @available(iOS 9.0, *)
 //  optional public func indexPathForPreferredFocusedViewInTableView(tableView: UITableView) -> NSIndexPath?
+  
+}
+
+extension TransferableTableViewController: TransferableContents {
+  
+  func longPressGestureRecognized() {
+//    print("")
+//    print("TransferableTableViewController::longPressGestureRecognized:")
+    
+    let state: UIGestureRecognizerState = longPressGestureRecognizer.state
+    
+    switch state {
+    case .Began:
+      transferableController.contentDidStartMoving(longPressGestureRecognizer)
+    case .Changed:
+      transferableController.contentMoving(longPressGestureRecognizer)
+    case .Ended:
+      transferableController.contentDidEndMoving(longPressGestureRecognizer)
+    default:
+      break
+    }
+  }
   
 }

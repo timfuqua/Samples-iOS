@@ -20,6 +20,8 @@
 		607666861BE7CE3D00E59B9D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607666851BE7CE3D00E59B9D /* Car.swift */; };
 		607666881BE7D2C600E59B9D /* TransferableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607666871BE7D2C600E59B9D /* TransferableCollectionViewController.swift */; };
 		60D12B1E1BE7DCF0006FEC6C /* TransferableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D12B1D1BE7DCF0006FEC6C /* TransferableTableViewController.swift */; };
+		60F0CBCA1BE97C91002D67EC /* TransferableProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0CBC91BE97C91002D67EC /* TransferableProtocols.swift */; };
+		60F0CBCE1BF26D6A002D67EC /* TransferableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0CBCD1BF26D6A002D67EC /* TransferableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		607666851BE7CE3D00E59B9D /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		607666871BE7D2C600E59B9D /* TransferableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferableCollectionViewController.swift; sourceTree = "<group>"; };
 		60D12B1D1BE7DCF0006FEC6C /* TransferableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferableTableViewController.swift; sourceTree = "<group>"; };
+		60F0CBC91BE97C91002D67EC /* TransferableProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferableProtocols.swift; sourceTree = "<group>"; };
+		60F0CBCD1BF26D6A002D67EC /* TransferableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				607666871BE7D2C600E59B9D /* TransferableCollectionViewController.swift */,
 				60749D4F1BE7EDD2003802B2 /* TransferableCarCollectionViewCell.swift */,
 				60D12B1D1BE7DCF0006FEC6C /* TransferableTableViewController.swift */,
+				60F0CBCD1BF26D6A002D67EC /* TransferableView.swift */,
+				60F0CBC91BE97C91002D67EC /* TransferableProtocols.swift */,
 				60749D511BE7EDE6003802B2 /* TransferableCarTableViewCell.swift */,
 				607666851BE7CE3D00E59B9D /* Car.swift */,
 				6076665B1BE7CC4E00E59B9D /* Main.storyboard */,
@@ -279,7 +285,9 @@
 				60D12B1E1BE7DCF0006FEC6C /* TransferableTableViewController.swift in Sources */,
 				60749D501BE7EDD2003802B2 /* TransferableCarCollectionViewCell.swift in Sources */,
 				6076665A1BE7CC4E00E59B9D /* ViewController.swift in Sources */,
+				60F0CBCA1BE97C91002D67EC /* TransferableProtocols.swift in Sources */,
 				607666881BE7D2C600E59B9D /* TransferableCollectionViewController.swift in Sources */,
+				60F0CBCE1BF26D6A002D67EC /* TransferableView.swift in Sources */,
 				607666581BE7CC4E00E59B9D /* AppDelegate.swift in Sources */,
 				607666861BE7CE3D00E59B9D /* Car.swift in Sources */,
 			);

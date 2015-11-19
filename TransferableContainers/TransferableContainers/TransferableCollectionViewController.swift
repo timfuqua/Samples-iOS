@@ -26,7 +26,11 @@ class TransferableCollectionViewController: UIViewController {
   /// The data source of the collection view
   var collectionViewDataSource: [Car]? = nil
   
+  var longPressGestureRecognizer: UILongPressGestureRecognizer!
+  var transferableController: TransferableController!
+  
   // MARK: @IBOutlets
+  @IBOutlet weak var collectionView: UICollectionView!
   
   // MARK: init
   
@@ -34,11 +38,30 @@ class TransferableCollectionViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: Selector(stringLiteral: "longPressGestureRecognized"))
+    collectionView.addGestureRecognizer(longPressGestureRecognizer)
   }
   
   // MARK: @IBActions
   
   // MARK: public funcs
+  
+  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    print("")
+    print("TransferableCollectionViewController::touchesBegan:")
+    let touch = touches.first!
+    let touchPoint = touch.locationInView(collectionView)
+    print(touchPoint)
+  }
+  
+  override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    print("")
+    print("TransferableCollectionViewController::touchesMoved:")
+    let touch = touches.first!
+    let touchPoint = touch.locationInView(collectionView)
+    print(touchPoint)
+  }
   
   // MARK: private funcs
   
@@ -182,5 +205,30 @@ extension TransferableCollectionViewController: UICollectionViewDelegateFlowLayo
 //  optional public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize
 //  @available(iOS 6.0, *)
 //  optional public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize
+  
+}
+
+extension TransferableCollectionViewController: TransferableContents {
+  
+  func longPressGestureRecognized() {
+    //    print("")
+    //    print("TransferableTableViewController::longPressGestureRecognized:")
+    
+    let state: UIGestureRecognizerState = longPressGestureRecognizer.state
+    
+    //    let touchPoint = longPressGestureRecognizer.locationInView(tableView)
+    //    print(touchPoint)
+    
+    switch state {
+    case .Began:
+      transferableController.contentDidStartMoving(longPressGestureRecognizer)
+    case .Changed:
+      transferableController.contentMoving(longPressGestureRecognizer)
+    case .Ended:
+      transferableController.contentDidEndMoving(longPressGestureRecognizer)
+    default:
+      break
+    }
+  }
   
 }

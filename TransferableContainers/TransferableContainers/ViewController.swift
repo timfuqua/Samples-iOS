@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  @IBOutlet weak var leftCarsContainerView: UIView!
+  @IBOutlet weak var rightCarsContainerView: UIView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -18,12 +21,72 @@ class ViewController: UIViewController {
     if segue.identifier == "parent_to_TransferableCollectionVC" {
       if let transferableCollectionVC = segue.destinationViewController as? TransferableCollectionViewController {
         transferableCollectionVC.collectionViewDataSource = myCars
+        transferableCollectionVC.transferableController = self
       }
     }
     else if segue.identifier == "parent_to_TransferableTableVC" {
       if let transferableTableVC = segue.destinationViewController as? TransferableTableViewController {
         transferableTableVC.tableViewDataSource = wishlistCars
+        transferableTableVC.transferableController = self
       }
+    }
+  }
+  
+}
+
+extension ViewController: TransferableController {
+  
+  func contentDidStartMoving(longPress: UILongPressGestureRecognizer) {
+    print("")
+    print("ViewController::contentDidStartMoving:")
+    
+    if CGRectContainsPoint(leftCarsContainerView.bounds, longPress.locationInView(leftCarsContainerView)) {
+      print("In left view: ", terminator: "")
+      
+      let touchPoint = longPress.locationInView(leftCarsContainerView)
+      print(touchPoint)
+    }
+    else if CGRectContainsPoint(rightCarsContainerView.bounds, longPress.locationInView(rightCarsContainerView)) {
+      print("In right view: ", terminator: "")
+      
+      let touchPoint = longPress.locationInView(rightCarsContainerView)
+      print(touchPoint)
+    }
+  }
+  
+  func contentMoving(longPress: UILongPressGestureRecognizer) {
+    print("")
+    print("ViewController::contentMoving:")
+    
+    if CGRectContainsPoint(leftCarsContainerView.bounds, longPress.locationInView(leftCarsContainerView)) {
+      print("In left view: ", terminator: "")
+      
+      let touchPoint = longPress.locationInView(leftCarsContainerView)
+      print(touchPoint)
+    }
+    else if CGRectContainsPoint(rightCarsContainerView.bounds, longPress.locationInView(rightCarsContainerView)) {
+      print("In right view: ", terminator: "")
+      
+      let touchPoint = longPress.locationInView(rightCarsContainerView)
+      print(touchPoint)
+    }
+  }
+  
+  func contentDidEndMoving(longPress: UILongPressGestureRecognizer) {
+    print("")
+    print("ViewController::contentDidEndMoving:")
+    
+    if CGRectContainsPoint(leftCarsContainerView.bounds, longPress.locationInView(leftCarsContainerView)) {
+      print("In left view: ", terminator: "")
+      
+      let touchPoint = longPress.locationInView(leftCarsContainerView)
+      print(touchPoint)
+    }
+    else if CGRectContainsPoint(rightCarsContainerView.bounds, longPress.locationInView(rightCarsContainerView)) {
+      print("In right view: ", terminator: "")
+      
+      let touchPoint = longPress.locationInView(rightCarsContainerView)
+      print(touchPoint)
     }
   }
   
