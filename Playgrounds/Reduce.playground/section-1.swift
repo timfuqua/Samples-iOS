@@ -4,7 +4,7 @@ import UIKit
 
 func removeFirstNChars(inout shortenedString: String, numChars: Int) {
   
-  let charCount: Int = countElements(shortenedString)
+  let charCount: Int = count(shortenedString)
   assert(numChars >= 0 && numChars <= charCount, "Can't remove \(numChars) chars from a string of length \(charCount)")
   
   if charCount == 0 || numChars == 0 {
@@ -20,7 +20,7 @@ func removeFirstChar(inout shortenedString: String) {
 
 func removeFirstNChars(inString: String, numChars: Int) -> String {
   
-  let charCount: Int = countElements(inString)
+  let charCount: Int = count(inString)
   assert(numChars >= 0 && numChars <= charCount, "Can't remove \(numChars) chars from a string of length \(charCount)")
   
   if charCount == 0 || numChars == 0 {

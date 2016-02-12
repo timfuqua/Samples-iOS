@@ -1,15 +1,35 @@
-// Playground - noun: a place where people can play
+
 
 import UIKit
 
-func printValues(list: [Int], separator: String, newline: Bool = true) {
-  for value in list {
-    print(value)
-    
-    if value != list.last! {
-      print(separator)
-    }
+func removeFirstNChars(inString: String, numChars: Int) -> String {
+  let charCount: Int = count(inString)
+  
+  if charCount == 0 || numChars == 0 {
+    return ""
   }
+  
+  assert(numChars <= charCount, "Can't remove \(numChars) chars from a string of length \(charCount)")
+  
+  return inString.substringFromIndex(advance(inString.startIndex, numChars))
+}
+
+func reduceWithDelimiter(stringArray: [String], delimiter: String) -> String {
+  return removeFirstNChars(stringArray.reduce("", combine: { (combined, next) in
+    combined + delimiter + next
+  }), count(delimiter))
+}
+
+func printValues(list: [Int], separator: String, newline: Bool = true) {
+//  for value in list {
+//    print(value)
+//    
+//    if value != list.last! {
+//      print(separator)
+//    }
+//  }
+  let listAsStrings: [String] = list.map({"\($0)"})
+  print(reduceWithDelimiter(listAsStrings, separator))
   
   if newline {
     println()
@@ -244,9 +264,9 @@ func test03() {
 
 
 
-//test01()
+test01()
 //test02()
-test03()
+//test03()
 
 
 
