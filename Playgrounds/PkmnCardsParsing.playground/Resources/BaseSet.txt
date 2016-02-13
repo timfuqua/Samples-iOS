@@ -1,0 +1,1354 @@
+Home // About // Advanced // Syntax // Pit // RandomBREAKpoint (new) // BREAKthrough // Ancient Origins // All Sets
+Query:  
+e:base-set
+    
+[ 1-102 ]
+Alakazam from Base Set
+Alakazam (Base Set BS 1)
+Text // Rating: 88% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Alakazam – Psychic – 80 HP
+Stage 2 – Evolves from Kadabra
+Pokémon Power: Damage Swap
+As often as you like during your turn (before your attack), you may move 1 damage counter from 1 of your Pokémon to another as long as you don’t Knock Out that Pokémon. This power can’t be used if Alakazam is Asleep, Confused, or Paralyzed.
+[P][P][P] Confuse Ray: 30 damage. Flip a coin. If heads, the Defending Pokémon is now Confused.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 1/102 – Rare Holo
+Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5000.
+Blastoise from Base Set
+Blastoise (Base Set BS 2)
+Text // Rating: 88% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Blastoise – Water – 100 HP
+Stage 2 – Evolves from Wartortle
+Pokémon Power: Rain Dance
+As often as you like during your turn (before your attack), you may attack 1 [W] Energy card to 1 of your [W] Pokémon. (This doesn’t use up your 1 Energy card attachment for the turn.) This power can’t be used if Blastoise is Asleep, Confused, or Paralyzed.
+[W][W][W] Hydro Pump: 40+ damage. Does 40 damage plus 10 more damage for each [W] Energy attached to Blastoise but not used to pay for this attack’s Energy cost. Extra [W] Energy after the 2nd doesn’t count.
+Weakness: Lightning ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 2/102 – Rare Holo
+A brutal Pokémon with pressurized water jets on its shell. They are used for high-speed tackles.
+Chansey from Base Set
+Chansey (Base Set BS 3)
+Text // Rating: 89% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Chansey – Colorless – 120 HP
+Basic
+[C][C] Scrunch: Flip a coin. If heads, prevent all damage done to Chansey during your opponent’s next turn. (Any other effects of attacks still happen.)
+[C][C][C][C] Double-edge: 80 damage. Chansey does 80 damage to itself.
+Weakness: Fighting ×2
+Resistance: Psychic -30
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 3/102 – Rare Holo
+A rare and elusive Pokémon that is said to bring happiness to those who manage to catch it.
+Charizard from Base Set
+Charizard (Base Set BS 4)
+Text // Rating: 37% // Proxies // Rulings // Discussion: 28
+
+Buy it on Amazon »
+Charizard – Fire – 120 HP
+Stage 2 – Evolves from Charmeleon
+Pokémon Power: Energy Burn
+As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into [R] Energy for the rest of the turn. This power can’t be used if Charizard is Asleep, Confused, or Paralyzed.
+[R][R][R][R] Fire Spin: 100 damage. Discard 2 Energy cards attached to Charizard in order to use this attack.
+Weakness: Water ×2
+Resistance: Fighting -30
+Retreat Cost: 3
+Illus. Mitsuhiro Arita
+Base Set – 4/102 – Rare Holo
+Spits fire that is hot enough to melt boulders. Known to unintentionally cause forest fires.
+Clefairy from Base Set
+Clefairy (Base Set BS 5)
+Text // Rating: 64% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Clefairy – Colorless – 40 HP
+Basic
+[C] Sing: Flip a coin. If heads, the Defending Pokémon is now Asleep.
+[C][C][C] Metronome: Choose 1 of the Defending Pokémon’s attacks. Metronome copies that attack except of its Energy costs and anything else required in order to use that attach, such as discarding Energy cards. (No matter what type the Defending Pokémon is, Clefairy’s type is still Colorless).
+Weakness: Fighting ×2
+Resistance: Psychic -30
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 5/102 – Rare Holo
+Its magical and cute appeal has many admirers. It is rare and found only in certain areas.
+Gyarados from Base Set
+Gyarados (Base Set BS 6)
+Text // Rating: 68% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Gyarados – Water – 100 HP
+Stage 1 – Evolves from Magikarp
+[W][W][W] Dragon Rage: 50 damage.
+[W][W][W][W] Bubblebeam: 40 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+Weakness: Grass ×2
+Resistance: Fighting -30
+Retreat Cost: 3
+Illus. Mitsuhiro Arita
+Base Set – 6/102 – Rare Holo
+Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.
+Hitmonchan from Base Set
+Hitmonchan (Base Set BS 7)
+Text // Rating: 95% // Proxies // Rulings // Discussion: 12
+
+Buy it on Amazon »
+Hitmonchan – Fighting – 70 HP
+Basic
+[F] Jab: 20 damage.
+[F][F][C] Special Punch: 40 damage.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 2
+Illus. Ken Sugimori
+Base Set – 7/102 – Rare Holo
+While seeming to do nothing, it fires punches in lightning-fast volleys that are impossible to see.
+Machamp from Base Set
+Machamp (Base Set BS 8)
+Text // Rating: 48% // Proxies // Rulings // Discussion: 6
+
+Buy it on Amazon »
+Machamp – Fighting – 100 HP
+Stage 2 – Evolves from Machoke
+Pokémon Power: Strikes Back
+Whenever your opponent’s attack damages Machamp (even if Machamp is Knocked Out), this power does 10 damage to the attacking Pokémon. (Don’t apply Weakness and Resistance.) This power can’t be used if Machamp is Asleep, Confused, or Paralyzed when your opponent attacks.
+[F][F][F][C] Seismic Toss: 60 damage.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 8/102 – Rare Holo
+Using its amazing muscles, it throws powerful punches that can knock its victim clear over the horizon.
+Magneton from Base Set
+Magneton (Base Set BS 9)
+Text // Rating: 30% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Magneton – Lightning – 60 HP
+Stage 1 – Evolves from Magnemite
+[L][L][C] Thunder Wave: 30 damage. Flip a coin. If heads, the Defendind Pokémon is now Paralyzed.
+[L][L][C][C] Selfdestruct: 80 damage. Does 20 damage to each player’s Bench. (Don’t apply Weakness and Resistance for Benched Pokémon.) Magneton does 80 damage to itself.
+Weakness: Fighting ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Keiji Kinebuchi
+Base Set – 9/102 – Rare Holo
+Formed by several Magnemites linked together. It frequently appears when sunspots flare up.
+Mewtwo from Base Set
+Mewtwo (Base Set BS 10)
+Text // Rating: 76% // Proxies // Rulings // Discussion: 13
+
+Buy it on Amazon »
+Mewtwo – Psychic – 60 HP
+Basic
+[P][C] Psychic: 10+ damage. Does 10 damage plus 10 more damage for each Energy card attached to the Defending Pokémon.
+[P][P] Barrier: Discard 1 [P] Energy card attached to Mewtwo in order to use this attack. During your opponent’s next turn, prevent all effects of attacks, including damage, done to Mewtwo.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 10/102 – Rare Holo
+A scientist created this Pokémon after years of horrific gene-splicing and DNA engineering experiments.
+Nidoking from Base Set
+Nidoking (Base Set BS 11)
+Text // Rating: 60% // Proxies // Rulings // Discussion: 8
+
+Buy it on Amazon »
+Nidoking – Grass – 90 HP
+Stage 2 – Evolves from Nidorino
+[G][C][C] Thrash: 30+ damage. Flip a coin. If heads, this attack does 30 damage plus 10 more damage; if tails, this attack does 30 damage and Nidoking does 10 damage to itself.
+[G][G][G] Toxic: 20 damage. The Defending Pokémon is now Poisoned. It now takes 20 Poison damage instead of 10 after each player’s turn (even if it was already Poisoned).
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 11/102 – Rare Holo
+Uses its powerful tail in battle to smash, constrict, then break its prey’s bones.
+Ninetales from Base Set
+Ninetales (Base Set BS 12)
+Text // Rating: 55% // Proxies // Rulings // Discussion: 9
+
+Buy it on Amazon »
+Ninetales – Fire – 80 HP
+Stage 1 – Evolves from Vulpix
+[C][C] Lure: If your opponent has any Benched Pokémon, choose 1 of them and switch it with his or her Active Pokémon.
+[R][R][R][R] Fire Blast: 80 damage. Discard 1 [R] Energy card attached to Ninetales in order to use this attack.
+Weakness: Water ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 12/102 – Rare Holo
+Very smart and very vengeful. Grabbing one of its many tails could result in a 1,000-year curse.
+Poliwrath from Base Set
+Poliwrath (Base Set BS 13)
+Text // Rating: 55% // Proxies // Rulings // Discussion: 15
+
+Buy it on Amazon »
+Poliwrath – Water – 90 HP
+Stage 1 – Evolves from Poliwhirl
+[W][W][C] Water Gun: 30+ damage. Does 30 damage plus 10 more damage for each [W] Energy attached to Poliwrath but not used to pay for this attack’s Energy cost. Extra [W] Energy after the 2nd don’t count.
+[W][W][C][C] Whirlpool: 40 damage. If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it.
+Weakness: Grass ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 13/102 – Rare Holo
+An adept swimmer at both the front crawl and breaststroke. Easily overtakes the best human swimmers.
+Raichu from Base Set
+Raichu (Base Set BS 14)
+Text // Rating: 49% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Raichu – Lightning – 80 HP
+Stage 1 – Evolves from Pikachu
+[L][C][C] Agility: 20 damage. Flip a coin. If heads, during your opponent’s next turn, prevent all effects of attacks, including damage, done to Raichu.
+[L][L][L][C] Thunder: 60 damage. Flip a coin. If tails, Raichu does 30 damage to itself.
+Weakness: Fighting ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 14/102 – Rare Holo
+Its long tail serves as a ground to protect itself from its own high-voltage power.
+Venusaur from Base Set
+Venusaur (Base Set BS 15)
+Text // Rating: 77% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Venusaur – Grass – 100 HP
+Stage 2 – Evolves from Ivysaur
+Pokémon Power: Energy Trans
+As often as you like during your turn (before you attack), you may take 1 [G] Energy card attached to 1 of your Pokémon and attach it to a different one. This power can’t be used if Venusaur is Asleep, Confused, or Paralyzed.
+[G][G][G][G] Solarbeam: 60 damage.
+Weakness: Fire ×2
+Resistance: none
+Retreat Cost: 2
+Illus. Mitsuhiro Arita
+Base Set – 15/102 – Rare Holo
+This plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
+Zapdos from Base Set
+Zapdos (Base Set BS 16)
+Text // Rating: 77% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Zapdos – Lightning – 90 HP
+Basic
+[L][L][L][C] Thunder: 60 damage. Flip a coin. If tails, Zapdos does 30 damage to itself.
+[L][L][L][L] Thunderbolt: 100 damage. Discard all Energy cards attached to Zapdos in order to use this attack.
+Weakness: none
+Resistance: Fighting -30
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 16/102 – Rare Holo
+A legendary bird Pokémon said to appear from clouds while wielding enormous Lightning Bolts.
+Beedrill from Base Set
+Beedrill (Base Set BS 17)
+Text // Rating: 52% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Beedrill – Grass – 80 HP
+Stage 2 – Evolves from Kakuna
+[C][C][C] Twineedle: 30× damage. Flip 2 coins. This attack does 30 damage times the number of heads.
+[G][G][G] Poison Sting: 40 damage. Flip a coin. If heads, the Defending Pokémon is now Poisoned.
+Weakness: Fire ×2
+Resistance: Fighting -30
+Retreat Cost: 0
+Illus. Ken Sugimori
+Base Set – 17/102 – Rare
+Flies at high speed and attacks using the large, venomous stingers on its forelegs and tail.
+Dragonair from Base Set
+Dragonair (Base Set BS 18)
+Text // Rating: 55% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Dragonair – Colorless – 80 HP
+Stage 1 – Evolves from Dratini
+[C][C][C] Slam: 30× damage. Flip 2 coins. This attack does 30 damage times the number of heads.
+[C][C][C][C] Hyper Beam: 20 damage. If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it.
+Weakness: none
+Resistance: Psychic -30
+Retreat Cost: 2
+Illus. Mitsuhiro Arita
+Base Set – 18/102 – Rare
+A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions.
+Dugtrio from Base Set
+Dugtrio (Base Set BS 19)
+Text // Rating: 47% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Dugtrio – Fighting – 70 HP
+Stage 1 – Evolves from Diglett
+[F][F][C] Slash: 40 damage.
+[F][F][F][F] Earthquake: 70 damage. Does 10 damage to each of your own Benched Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.)
+Weakness: Grass ×2
+Resistance: Lightning -30
+Retreat Cost: 2
+Illus. Keiji Kinebuchi
+Base Set – 19/102 – Rare
+A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.
+Electabuzz from Base Set
+Electabuzz (Base Set BS 20)
+Text // Rating: 96% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Electabuzz – Lightning – 70 HP
+Basic
+[L] Thundershock: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+[L][C] Thunderpunch: 30+ damage. Flip a coin. If heads, this attack does 30 damage plus 10 more damage. If tails, this attack does 30 damage plus Electabuzz does 10 damage to itself.
+Weakness: Fighting ×2
+Resistance: none
+Retreat Cost: 2
+Illus. Ken Sugimori
+Base Set – 20/102 – Rare
+Normally found near Power Plants, it can wander away and cause major blackouts in cities.
+Electrode from Base Set
+Electrode (Base Set BS 21)
+Text // Rating: 83% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Electrode – Lightning – 80 HP
+Stage 1 – Evolves from Voltorb
+Pokémon Power: Buzzap
+At any time during your turn (before your attack), you may Knock Out Electrode and attach it to 1 of your other Pokémon. If you do, choose a type of Energy. Electrode is now an Energy card (instead of a Pokémon) that provides 2 energy of that type. You can’t use this power if Electrode is Asleep, Confused, or Paralyzed.
+[L][L][L] Electric Shock: 50 damage. Flip a coin. If tails, Electrode does 10 damage to itself.
+Weakness: Fighting ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Keiji Kinebuchi
+Base Set – 21/102 – Rare
+It stores electrical energy under very high pressure. It often explodes with little or no provocation.
+Pidgeotto from Base Set
+Pidgeotto (Base Set BS 22)
+Text // Rating: 46% // Proxies // Rulings // Discussion: 10
+
+Buy it on Amazon »
+Pidgeotto – Colorless – 60 HP
+Stage 1 – Evolves from Pidgey
+[C][C] Whirlwind: 20 damage. If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)
+[C][C][C] Mirror Move: If Pidgeotto was attacked last turn, do the final result of that attack on Pidgeotto to the Defending Pokémon.
+Weakness: Lightning ×2
+Resistance: Fighting -30
+Illus. Ken Sugimori
+Base Set – 22/102 – Rare
+Very protective of its sprawling territory, this Pokémon will fiercely peck at any intruder.
+Arcanine from Base Set
+Arcanine (Base Set BS 23)
+Text // Rating: 53% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Arcanine – Fire – 100 HP
+Stage 1 – Evolves from Growlithe
+[R][R][C] Flamethrower: 50 damage. Discard 1 [R] Energy card attached to Arcanine in order to use this attack.
+[R][R][C][C] Take Down: 80 damage. Arcanine does 30 damage to itself.
+Weakness: Water ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 23/102 – Uncommon
+A Pokémon that has been long admired for its beauty. It runs gracefully, as if on wings.
+Charmeleon from Base Set
+Charmeleon (Base Set BS 24)
+Text // Rating: 53% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Charmeleon – Fire – 80 HP
+Stage 1 – Evolves from Charmander
+[C][C][C] Slash: 30 damage.
+[R][R][C] Flamethrower: 50 damage. Discard 1 [R] Energy card attached to Charmeleon in order to use this attack.
+Weakness: Water ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 24/102 – Uncommon
+When it swings its burning tail, it raises the temperature to unbearably high levels.
+Dewgong from Base Set
+Dewgong (Base Set BS 25)
+Text // Rating: 66% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Dewgong – Water – 80 HP
+Stage 1 – Evolves from Seel
+[W][W][C] Aurora Beam: 50 damage.
+[W][W][C][C] Ice Beam: 30 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+Weakness: Lightning ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Mitsuhiro Arita
+Base Set – 25/102 – Uncommon
+Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.
+Dratini from Base Set
+Dratini (Base Set BS 26)
+Text // Rating: 39% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Dratini – Colorless – 40 HP
+Basic
+[C] Pound: 10 damage.
+Weakness: none
+Resistance: Psychic -30
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 26/102 – Uncommon
+Long considered a mythical Pokémon until recently, when a small colony was found living underwater.
+Farfetch'd from Base Set
+Farfetch’d (Base Set BS 27)
+Text // Rating: 71% // Proxies // Rulings // Discussion: 4
+
+Buy it on Amazon »
+Farfetch’d – Colorless – 50 HP
+Basic
+[C] Leek Slap: 30 damage. Flip a coin. If tails, this attack does nothing. Either way, you can’t use this attack again as long as Farfetch’d stays in play (even putting Farfetch’d on the Bench won’t let you use it again).
+[C][C][C] Pot Smash: 30 damage.
+Weakness: Lightning ×2
+Resistance: Fighting -30
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 27/102 – Uncommon
+The sprig of green onions it holds is its weapon. This sprig is used much like a metal sword.
+Growlithe from Base Set
+Growlithe (Base Set BS 28)
+Text // Rating: 46% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Growlithe – Fire – 60 HP
+Basic
+[R][C] Flare: 20 damage.
+Weakness: Water ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 28/102 – Uncommon
+Very protective of its territory. It will bark and bite to Repel Intruders from its space.
+Haunter from Base Set
+Haunter (Base Set BS 29)
+Text // Rating: 11% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Haunter – Psychic – 60 HP
+Stage 1 – Evolves from Gastly
+[P] Hypnosis: The Defending Pokémon is now Asleep.
+[P][P] Dream Eater: 50 damage. You can’t use this attack unless the Defending Pokémon is Asleep.
+Weakness: none
+Resistance: Fighting -30
+Retreat Cost: 1
+Illus. Keiji Kinebuchi
+Base Set – 29/102 – Uncommon
+Because of its ability to slip through block walls, it is said to be from another dimension.
+Ivysaur from Base Set
+Ivysaur (Base Set BS 30)
+Text // Rating: 38% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Ivysaur – Grass – 60 HP
+Stage 1 – Evolves from Bulbasaur
+[G][C][C] Vine Whip: 30 damage.
+[G][G][G] Poisonpowder: 20 damage. The Defending Pokémon is now Poisoned.
+Weakness: Fire ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 30/102 – Uncommon
+When the bulb on its back grows large, the Pokémon seems to lose the ability to stand on its hind legs.
+Jynx from Base Set
+Jynx (Base Set BS 31)
+Text // Rating: 48% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Jynx – Psychic – 70 HP
+Basic
+[P] Doubleslap: 10× damage. Flip 2 coins. This attack does 10 damage times the number of heads.
+[P][P][C] Meditate: 20+ damage. Does 20 damage plus 10 more damage for each damage counter on the Defending Pokémon.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 2
+Illus. Ken Sugimori
+Base Set – 31/102 – Uncommon
+Merely by meditating, the Pokémon launches a powerful Psychic Energy attack.
+Kadabra from Base Set
+Kadabra (Base Set BS 32)
+Text // Rating: 50% // Proxies // Rulings // Discussion: 4
+
+Buy it on Amazon »
+Kadabra – Psychic – 60 HP
+Stage 1 – Evolves from Abra
+[P][P] Recover: Discard 1 [P] Energy card attached to Kadabra in order to use this attack. Remove all damage counters from Kadabra.
+[P][P][C] Super Psy: 50 damage.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 32/102 – Uncommon
+It emits special alpha waves from its body that induce headaches even to those just nearby.
+Kakuna from Base Set
+Kakuna (Base Set BS 33)
+Text // Rating: 33% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Kakuna – Grass – 80 HP
+Stage 1 – Evolves from Weedle
+[C][C] Stiffen: Flip a coin. If heads, prevent all damage done to Kakuna during your opponent’s next turn. (Any other effects of attacks still happen.)
+[G][G] Poisonpowder: 20 damage. Flip a coin. If heads, the Defending Pokémon is now Poisoned.
+Weakness: Fire ×2
+Resistance: none
+Retreat Cost: 2
+Illus. Keiji Kinebuchi
+Base Set – 33/102 – Uncommon
+Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators.
+Machoke from Base Set
+Machoke (Base Set BS 34)
+Text // Rating: 45% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Machoke – Fighting – 80 HP
+Stage 1 – Evolves from Machoke
+[F][F][C] Karate Chop: 50- damage. Does 50 damage minus 10 damage for each damage counter on Machoke.
+[F][F][C][C] Submission: 60 damage. Machoke does 20 damage to itself.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 34/102 – Uncommon
+Its muscular body is so powerful that it must wear a power-save belt to help regulate its motions.
+Magikarp from Base Set
+Magikarp (Base Set BS 35)
+Text // Rating: 15% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Magikarp – Water – 30 HP
+Basic
+[C] Tackle: 10 damage.
+[W] Flail: 10× damage. Does 10 damage times the number of damage counters on Magikarp.
+Weakness: Lightning ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 35/102 – Uncommon
+In the distant past, it was stronger than its horribly weak descendants that exist today.
+Magmar from Base Set
+Magmar (Base Set BS 36)
+Text // Rating: 51% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Magmar – Fire – 50 HP
+Basic
+[R][R] Fire Punch: 30 damage.
+[R][R][C] Flamethrower: 50 damage. Discard 1 [R] Energy card attached to Magmar in order to use this attack.
+Weakness: Water ×2
+Resistance: none
+Retreat Cost: 2
+Illus. Ken Sugimori
+Base Set – 36/102 – Uncommon
+Its body always burns with an orange glow that enables it to hide perfectly among flames.
+Nidorino from Base Set
+Nidorino (Base Set BS 37)
+Text // Rating: 39% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Nidorino – Grass – 60 HP
+Stage 1 – Evolves from Nidoran Male
+[G][C][C] Double Kick: 30× damage. Flip 2 coins. This attack does 30 damage times the number of heads.
+[G][G][C][C] Horn Drill: 50 damage.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 37/102 – Uncommon
+An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom.
+Poliwhirl from Base Set
+Poliwhirl (Base Set BS 38)
+Text // Rating: 47% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Poliwhirl – Water – 60 HP
+Stage 1 – Evolves from Poliwag
+[W][W] Amnesia: Choose 1 of the Defending Pokémon’s attacks. That Pokémon can’t use that attack during your opponent’s next turn.
+[W][W][C] Doubleslap: 30× damage. Flip 2 coins. This attack does 30 damage times the number of heads.
+Weakness: Grass ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 38/102 – Uncommon
+Capable of living in or out of water. When out of water, it sweats to keep its body slimy.
+Porygon from Base Set
+Porygon (Base Set BS 39)
+Text // Rating: 5% // Proxies // Rulings // Discussion: 4
+
+Buy it on Amazon »
+Porygon – Colorless – 30 HP
+Basic
+[C] Conversion 1: If the Defending Pokémon has a Weakness, you may change it to a type of your choice other than Colorless.
+[C][C] Conversion 2: Change Porygon’s Resistance to a type of your choice other than Colorless.
+Weakness: Fighting ×2
+Resistance: Psychic -30
+Retreat Cost: 1
+Illus. Tomoaki Imakuni
+Base Set – 39/102 – Uncommon
+A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace.
+Raticate from Base Set
+Raticate (Base Set BS 40)
+Text // Rating: 61% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Raticate – Colorless – 60 HP
+Stage 1 – Evolves from Rattata
+[C] Bite: 20 damage.
+[C][C][C] Super Fang: ? damage. Does damage to the Defending Pokémon equal to half the Defending Pokémon’s remaining HP (rounded up to the nearest 10).
+Weakness: Fighting ×2
+Resistance: Psychic -30
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 40/102 – Uncommon
+It uses its whiskers to maintain its balance. It seems to slow down if they are cut off.
+Seel from Base Set
+Seel (Base Set BS 41)
+Text // Rating: 36% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Seel – Water – 60 HP
+Basic
+[W] Headbutt: 10 damage.
+Weakness: Lightning ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 41/102 – Uncommon
+The protruding horn on its head is very hard. This horn is used for bashing through thick ice.
+Wartortle from Base Set
+Wartortle (Base Set BS 42)
+Text // Rating: 40% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Wartortle – Water – 70 HP
+Stage 1 – Evolves from Squirtle
+[W][C] Withdraw: Flip a coin. If heads, prevent all damage done to Wartortle during your opponent’s next turn. (Any other effects of attacks still happen.)
+[W][C][C] Bite: 40 damage.
+Weakness: Lightning ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 42/102 – Uncommon
+Often hides in water to stalk unweary prey. When swimming quickly, it moves its ears to maintain balance.
+Abra from Base Set
+Abra (Base Set BS 43)
+Text // Rating: 37% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Abra – Psychic – 30 HP
+Basic
+[P] Psyshock: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 0
+Illus. Mitsuhiro Arita
+Base Set – 43/102 – Common
+Using its ability to read minds, it will identify impending danger and teleport to safety.
+Bulbasaur from Base Set
+Bulbasaur (Base Set BS 44)
+Text // Rating: 39% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Bulbasaur – Grass – 40 HP
+Basic
+[G][G] Leech Seed: 20 damage. Unless all damage from this attack is prevented, you may remove 1 damage counter from Bulbasaur.
+Weakness: Fire ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 44/102 – Common
+A strange seed was planted on its back at birth. Thus, a plant sprouted and now grows with this Pokémon.
+Caterpie from Base Set
+Caterpie (Base Set BS 45)
+Text // Rating: 19% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Caterpie – Grass – 40 HP
+Basic
+[G] String Shot: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+Weakness: Fire ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 45/102 – Common
+Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.
+Charmander from Base Set
+Charmander (Base Set BS 46)
+Text // Rating: 28% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Charmander – Fire – 50 HP
+Basic
+[C] Scratch: 10 damage.
+[R][C] Ember: 30 damage. Discard 1 [R] Energy card attached to Charmander in order to use this attack.
+Weakness: Water ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 46/102 – Common
+Obviously prefers hot places. If it gets caught in the rain, steam is said to spout from the tip of its tail.
+Diglett from Base Set
+Diglett (Base Set BS 47)
+Text // Rating: 19% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Diglett – Fighting – 30 HP
+Basic
+[F] Dig: 10 damage.
+[F][F] Mud Slap: 30 damage.
+Weakness: Grass ×2
+Resistance: Lightning -30
+Illus. Keiji Kinebuchi
+Base Set – 47/102 – Common
+Lives about three feet underground, where it feeds on plant roots. It sometimes appears above ground.
+Doduo from Base Set
+Doduo (Base Set BS 48)
+Text // Rating: 79% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Doduo – Colorless – 50 HP
+Basic
+[C] Fury Attack: 10× damage. Flip 2 coins. This attack does 10 damage times the number of heads.
+Weakness: Lightning ×2
+Resistance: Fighting -30
+Retreat Cost: 0
+Illus. Mitsuhiro Arita
+Base Set – 48/102 – Common
+A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.
+Drowzee from Base Set
+Drowzee (Base Set BS 49)
+Text // Rating: 18% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Drowzee – Psychic – 50 HP
+Basic
+[C] Pound: 10 damage.
+[P][P] Confuse Ray: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Confused.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 49/102 – Common
+Puts enemies to sleep, then eats their dreams. Occasionally gets sick from eating bad dreams.
+Gastly from Base Set
+Gastly (Base Set BS 50)
+Text // Rating: 1% // Proxies // Rulings // Discussion: 6
+
+Buy it on Amazon »
+Gastly – Psychic – 30 HP
+Basic
+[P] Sleeping Gas: Flip a coin. If heads, the Defending Pokémon is now Asleep.
+[P][C] Destiny Bond: Discard 1 [P] Energy card attached to Gastly in order to use this attack. If a Pokémon Knocks Out Gastly during your opponent’s next turn, Knock Out that Pokémon.
+Weakness: none
+Resistance: Fighting -30
+Retreat Cost: 0
+Illus. Keiji Kinebuchi
+Base Set – 50/102 – Common
+Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice.
+Koffing from Base Set
+Koffing (Base Set BS 51)
+Text // Rating: 25% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Koffing – Grass – 50 HP
+Basic
+[G][G] Foul Gas: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Poisoned; if tails, it is now Confused.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 51/102 – Common
+Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.
+Machop from Base Set
+Machop (Base Set BS 52)
+Text // Rating: 88% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Machop – Fighting – 50 HP
+Basic
+[F] Low Kick: 20 damage.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 52/102 – Common
+Loves to build its muscles. It trains in all styles of martial arts to become even stronger.
+Magnemite from Base Set
+Magnemite (Base Set BS 53)
+Text // Rating: 28% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Magnemite – Lightning – 40 HP
+Basic – Evolves from Magnemite
+[L] Thunder Wave: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+[L][C] Selfdestruct: 40 damage. Does 10 damage to each Pokémon on each player’s Bench. (Don’t apply Weakness and Resistance for Benched Pokémon.) Magnemite does 40 damage to itself.
+Weakness: Fighting ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Keiji Kinebuchi
+Base Set – 53/102 – Common
+Uses anti-gravity to stay suspended. Appears without warning and uses attacks like Thunder Wave.
+Metapod from Base Set
+Metapod (Base Set BS 54)
+Text // Rating: 29% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Metapod – Grass – 70 HP
+Stage 1 – Evolves from Caterpie
+[C][C] Stiffen: Flip a coin. If heads, prevent all damage done to Metapod during your opponent’s next turn. (Any other effects of attacks still happen.)
+[G][G] Stun Spore: 20 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+Weakness: Fire ×2
+Resistance: none
+Retreat Cost: 2
+Illus. Ken Sugimori
+Base Set – 54/102 – Common
+It is vulnerable to attack because its shell is soft, exposing its weak and tender body.
+Nidoran Male from Base Set
+Nidoran Male (Base Set BS 55)
+Text // Rating: 19% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Nidoran Male – Grass – 40 HP
+Basic
+[G] Horn Hazard: 30 damage. Flip a coin. If tails, this attack does nothing.
+Weakness: Psychic ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 55/102 – Common
+Stiffens its ears to sense danger. The larger, more powerful of its horns secretes venom.
+Onix from Base Set
+Onix (Base Set BS 56)
+Text // Rating: 21% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Onix – Fighting – 90 HP
+Basic
+[F] Rock Throw: 10 damage.
+[F][F] Harden: During your opponent’s next turn, whenever 30 or less damage is done to Onix (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)
+Weakness: Grass ×2
+Resistance: none
+Retreat Cost: 3
+Illus. Ken Sugimori
+Base Set – 56/102 – Common
+As it grows, the stone portions of its body harden to become similar to a diamond, though colored black.
+Pidgey from Base Set
+Pidgey (Base Set BS 57)
+Text // Rating: 17% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Pidgey – Colorless – 40 HP
+Basic
+[C][C] Whirlwind: 10 damage. If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)
+Weakness: Lightning ×2
+Resistance: Fighting -30
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 57/102 – Common
+A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.
+Pikachu from Base Set
+Pikachu (Base Set BS 58)
+Text // Rating: 24% // Proxies // Rulings // Discussion: 6
+
+Buy it on Amazon »
+Pikachu – Lightning – 40 HP
+Basic
+[C] Gnaw: 10 damage.
+[L][C] Thunder Jolt: 30 damage. Flip a coin. If tails, Pikachu does 10 damage to itself.
+Weakness: Fighting ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 58/102 – Common
+When several of these Pokémon gather, their electricity can cause Lightning Storms.
+Poliwag from Base Set
+Poliwag (Base Set BS 59)
+Text // Rating: 18% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Poliwag – Water – 40 HP
+Basic
+[W] Water Gun: 10+ damage. Does 10 damage plus 10 more damage for each [W] Energy attached to Poliwag but not used to pay for this attack’s Energy cost. Extra [W] Energy after the 2nd don’t count.
+Weakness: Grass ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 59/102 – Common
+Its newly grown legs prevent it from running. It appears to prefer swimming over trying to stand.
+Ponyta from Base Set
+Ponyta (Base Set BS 60)
+Text // Rating: 21% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Ponyta – Fire – 40 HP
+Basic
+[C][C] Smash Kick: 20 damage.
+[R][R] Flame Tail: 30 damage.
+Weakness: Water ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 60/102 – Common
+Its hooves are 10 times harder than diamonds. It can trample anything flat in moments.
+Rattata from Base Set
+Rattata (Base Set BS 61)
+Text // Rating: 41% // Proxies // Rulings // Discussion: 6
+
+Buy it on Amazon »
+Rattata – Colorless – 30 HP
+Basic
+[C] Bite: 20 damage.
+Weakness: Fighting ×2
+Resistance: Psychic -30
+Retreat Cost: 0
+Illus. Mitsuhiro Arita
+Base Set – 61/102 – Common
+Bites anything when it attacks. Small and very quick, it is a common sight in many places.
+Sandshrew from Base Set
+Sandshrew (Base Set BS 62)
+Text // Rating: 26% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Sandshrew – Fighting – 40 HP
+Basic
+[F] Sand-attack: 10 damage. If the Defending Pokémon tries to attack during your opponent’s next turn, your opponent flips a coin. If tails, that attack does nothing.
+Weakness: Grass ×2
+Resistance: Lightning -30
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 62/102 – Common
+Burrows deep underground in arid locations far from water. It only emerges to hunt for food.
+Squirtle from Base Set
+Squirtle (Base Set BS 63)
+Text // Rating: 45% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Squirtle – Water – 40 HP
+Basic
+[W] Bubble: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+[W][C] Withdraw: Flip a coin. If heads, prevent all damage done to Squirtle during your opponent’s next turn. (Any other effects of opponent’s attacks still happen.)
+Weakness: Lightning ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 63/102 – Common
+After birth, its back swells and hardens into a shell. It powerfully sprays foam from its mouth.
+Starmie from Base Set
+Starmie (Base Set BS 64)
+Text // Rating: 16% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Starmie – Water – 60 HP
+Stage 1 – Evolves from Staryu
+[W][W] Recover: Discard 1 [W] Energy card attached to Starmie in order to use this attack. Remove all damage counters from Starmie.
+[W][C][C] Star Freeze: 20 Damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+Weakness: Lightning ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Keiji Kinebuchi
+Base Set – 64/102 – Common
+Its central core glows with the seven colors of the rainbow. Some people value this core as a gem.
+Staryu from Base Set
+Staryu (Base Set BS 65)
+Text // Rating: 55% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Staryu – Water – 40 HP
+Basic
+[W] Slap: 20 damage.
+Weakness: Lightning ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Keiji Kinebuchi
+Base Set – 65/102 – Common
+An enigmatic Pokémon that can effortlessly regenerate any appendage it loses in battle.
+Tangela from Base Set
+Tangela (Base Set BS 66)
+Text // Rating: 49% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Tangela – Grass – 50 HP
+Basic
+[G][C] Bind: 20 damage. Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+[G][G][G] Poisonpowder: 20 damage. The Defending Pokémon is now Poisoned.
+Weakness: Fire ×2
+Resistance: none
+Retreat Cost: 2
+Illus. Mitsuhiro Arita
+Base Set – 66/102 – Common
+Its whole body is swathed with wide vines that are similar to seaweed. These vines shake as it walks.
+Voltorb from Base Set
+Voltorb (Base Set BS 67)
+Text // Rating: 9% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Voltorb – Lightning – 40 HP
+Basic
+[C] Tackle: 10 damage.
+Weakness: Fighting ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Keiji Kinebuchi
+Base Set – 67/102 – Common
+Usually found in Power Plants. Easily mistaken for a Monster Ball, it has zapped many people.
+Vulpix from Base Set
+Vulpix (Base Set BS 68)
+Text // Rating: 13% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Vulpix – Fire – 50 HP
+Basic
+[R][R] Confuse Ray: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Confused.
+Weakness: Water ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Ken Sugimori
+Base Set – 68/102 – Common
+At the time of birth, it has just one tail. Its tail splits from the tip as it grows older.
+Weedle from Base Set
+Weedle (Base Set BS 69)
+Text // Rating: 26% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Weedle – Grass – 40 HP
+Basic
+[G] Poison Sting: 10 damage. Flip a coin. If heads, the Defending Pokémon is now Poisoned.
+Weakness: Fire ×2
+Resistance: none
+Retreat Cost: 1
+Illus. Mitsuhiro Arita
+Base Set – 69/102 – Common
+Often found in forests, eating leaves. It has a sharp, venomous stinger on its head.
+Clefairy Doll from Base Set
+Clefairy Doll (Base Set BS 70)
+Text // Rating: 72% // Proxies // Rulings // Discussion: 5
+
+Buy it on Amazon »
+Clefairy Doll
+Trainer
+Play Clefairy Doll as if it were a Basic Pokémon. While in play, Clefairy Doll counts a a Pokémon (instead of a Trainer card). Clefairy Doll has no attacks, can’t retreat, and can’t be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn’t count as a Knocked Out Pokémon. At any time during your turn before your attack, you may discard Clefairy Doll.
+Illus. Keiji Kinebuchi
+Base Set – 70/102 – Rare
+Computer Search from Base Set
+Computer Search (Base Set BS 71)
+Text // Rating: 100% // Proxies // Rulings // Discussion: 36
+
+Buy it on Amazon »
+Computer Search
+Trainer
+Discard 2 of the other cards from you hand in order to search your deck for any card and put it into your hand. Shuffle your deck afterward.
+Illus. Keiji Kinebuchi
+Base Set – 71/102 – Rare
+Devolution Spray from Base Set
+Devolution Spray (Base Set BS 72)
+Text // Rating: 55% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Devolution Spray
+Trainer
+Choose 1 of your own Pokémon in play and a Stage of Evolution. Discard all Evolution cards of that Stage or higher attached to that Pokémon. That Pokémon is no longer Asleep, Confused, Paralyzed, Poisoned, or anything else that might be the result of an attack (just as if you had evolved it).
+Illus. Keiji Kinebuchi
+Base Set – 72/102 – Rare
+Imposter Professor Oak from Base Set
+Imposter Professor Oak (Base Set BS 73)
+Text // Rating: 36% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Imposter Professor Oak
+Trainer
+Your opponent shuffles his or her hand into his or her deck, then draws 7 cards.
+Illus. Ken Sugimori
+Base Set – 73/102 – Rare
+Item Finder from Base Set
+Item Finder (Base Set BS 74)
+Text // Rating: 97% // Proxies // Rulings // Discussion: 21
+
+Buy it on Amazon »
+Item Finder
+Trainer
+Discard 2 of the other cards from your hand in order to put a Trainer card from your discard pile into your hand.
+Illus. Keiji Kinebuchi
+Base Set – 74/102 – Rare
+Lass from Base Set
+Lass (Base Set BS 75)
+Text // Rating: 96% // Proxies // Rulings // Discussion: 11
+
+Buy it on Amazon »
+Lass
+Trainer
+You and your opponent show each other your hands, then shuffle all the Trainer cards from your hands into your decks.
+Illus. Ken Sugimori
+Base Set – 75/102 – Rare
+Pokémon Breeder from Base Set
+Pokémon Breeder (Base Set BS 76)
+Text // Rating: 82% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+Pokémon Breeder
+Trainer
+Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can only play this card when you would be allowed to evolve that Pokémon anyway.
+Illus. Ken Sugimori
+Base Set – 76/102 – Rare
+Pokémon Trader from Base Set
+Pokémon Trader (Base Set BS 77)
+Text // Rating: 81% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Pokémon Trader
+Trainer
+Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward.
+Illus. Ken Sugimori
+Base Set – 77/102 – Rare
+Scoop Up from Base Set
+Scoop Up (Base Set BS 78)
+Text // Rating: 100% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Scoop Up
+Trainer
+Choose 1 of your Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)
+Illus. Keiji Kinebuchi
+Base Set – 78/102 – Rare
+Super Energy Removal from Base Set
+Super Energy Removal (Base Set BS 79)
+Text // Rating: 100% // Proxies // Rulings // Discussion: 4
+
+Buy it on Amazon »
+Super Energy Removal
+Trainer
+Discard 1 Energy card attached to 1 of your Pokémon in order to choose 1 of your opponent’s Pokémon and up to 2 Energy cards attached to it. Discard those Energy cards.
+Illus. Keiji Kinebuchi
+Base Set – 79/102 – Rare
+Defender from Base Set
+Defender (Base Set BS 80)
+Text // Rating: 80% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Defender
+Trainer
+Attach Defender to 1 of your Pokémon. At the end of your opponent’s next turn, discard Defender. Damage done to that Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance).
+Illus. Keiji Kinebuchi
+Base Set – 80/102 – Uncommon
+Energy Retrieval from Base Set
+Energy Retrieval (Base Set BS 81)
+Text // Rating: 51% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Energy Retrieval
+Trainer
+Trade 1 of the other cards in your hand for up to 2 basic Energy cards from your discard pile.
+Illus. Keiji Kinebuchi
+Base Set – 81/102 – Uncommon
+Full Heal from Base Set
+Full Heal (Base Set BS 82)
+Text // Rating: 59% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Full Heal
+Trainer
+Your Active Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned.
+Illus. Keiji Kinebuchi
+Base Set – 82/102 – Uncommon
+Maintenance from Base Set
+Maintenance (Base Set BS 83)
+Text // Rating: 44% // Proxies // Rulings // Discussion: 4
+
+Buy it on Amazon »
+Maintenance
+Trainer
+Shuffle 2 of the other cards from your hand into your deck in order to draw a card.
+Illus. Keiji Kinebuchi
+Base Set – 83/102 – Uncommon
+PlusPower from Base Set
+PlusPower (Base Set BS 84)
+Text // Rating: 88% // Proxies // Rulings // Discussion: 1
+
+Buy it on Amazon »
+PlusPower
+Trainer
+Attach PlusPower to your Active Pokémon. At the end of your turn, discard PlusPower. If this Pokémon’s attack does damage to the Defending Pokémon (after applying Weakness and Resistance), the attack does 10 more damage to the Defending Pokémon.
+Illus. Keiji Kinebuchi
+Base Set – 84/102 – Uncommon
+Pokémon Center from Base Set
+Pokémon Center (Base Set BS 85)
+Text // Rating: 94% // Proxies // Rulings // Discussion: 8
+
+Buy it on Amazon »
+Pokémon Center
+Trainer
+Remove all damage counters from all of your own Pokémon with damage counters on them, then discard all Energy cards attached to those Pokémon.
+Illus. Keiji Kinebuchi
+Base Set – 85/102 – Uncommon
+Pokémon Flute from Base Set
+Pokémon Flute (Base Set BS 86)
+Text // Rating: 84% // Proxies // Rulings // Discussion: 4
+
+Buy it on Amazon »
+Pokémon Flute
+Trainer
+Choose 1 Basic Pokémon card from your opponent’s discard pile and put it onto his or her Bench. (You can’t play Pokémon Flute if your opponent’s Bench is full.)
+Illus. Keiji Kinebuchi
+Base Set – 86/102 – Uncommon
+Pokédex from Base Set
+Pokédex (Base Set BS 87)
+Text // Rating: 51% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Pokédex
+Trainer
+Look at up to 5 cards from the top of your deck and rearrange them as you like.
+Illus. Keiji Kinebuchi
+Base Set – 87/102 – Uncommon
+Professor Oak from Base Set
+Professor Oak (Base Set BS 88)
+Text // Rating: 100% // Proxies // Rulings // Discussion: 47
+
+Buy it on Amazon »
+Professor Oak
+Trainer
+Discard your hand, then draw 7 cards.
+Illus. Ken Sugimori
+Base Set – 88/102 – Uncommon
+Revive from Base Set
+Revive (Base Set BS 89)
+Text // Rating: 29% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Revive
+Trainer
+Put 1 Basic Pokémon card from your discard pile onto your Bench. Put damage counters on that Pokémon equal to half its HP (rounded down to the nearest 10). (You can’t play Revive if your Bench is full.)
+Illus. Keiji Kinebuchi
+Base Set – 89/102 – Uncommon
+Super Potion from Base Set
+Super Potion (Base Set BS 90)
+Text // Rating: 37% // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Super Potion
+Trainer
+Discard 1 Energy card attached to your own Pokémon in order to remove up to 4 damage counters from that Pokémon.
+Illus. Keiji Kinebuchi
+Base Set – 90/102 – Uncommon
+Bill from Base Set
+Bill (Base Set BS 91)
+Text // Rating: 98% // Proxies // Rulings // Discussion: 19
+
+Buy it on Amazon »
+Bill
+Trainer
+Draw 2 cards.
+Illus. Ken Sugimori
+Base Set – 91/102 – Common
+Energy Removal from Base Set
+Energy Removal (Base Set BS 92)
+Text // Rating: 99% // Proxies // Rulings // Discussion: 7
+
+Buy it on Amazon »
+Energy Removal
+Trainer
+Choose 1 Energy card attached to 1 of your opponent’s Pokémon and discard it.
+Illus. Keiji Kinebuchi
+Base Set – 92/102 – Common
+Gust of Wind from Base Set
+Gust of Wind (Base Set BS 93)
+Text // Rating: 99% // Proxies // Rulings // Discussion: 7
+
+Buy it on Amazon »
+Gust of Wind
+Trainer
+Choose 1 of your opponent’s Benched Pokémon and switch it with his or her Active Pokémon.
+Illus. Keiji Kinebuchi
+Base Set – 93/102 – Common
+Potion from Base Set
+Potion (Base Set BS 94)
+Text // Rating: 30% // Proxies // Rulings // Discussion: 3
+
+Buy it on Amazon »
+Potion
+Trainer
+Remove up to 2 damage counters from 1 of your Pokémon.
+Illus. Keiji Kinebuchi
+Base Set – 94/102 – Common
+Switch from Base Set
+Switch (Base Set BS 95)
+Text // Rating: 67% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Switch
+Trainer
+Switch 1 of your own Benched Pokémon with your Active Pokémon.
+Illus. Keiji Kinebuchi
+Base Set – 95/102 – Common
+Double Colorless Energy from Base Set
+Double Colorless Energy (Base Set BS 96)
+Text // Rating: 97% // Proxies // Rulings // Discussion: 2
+
+Buy it on Amazon »
+Double Colorless Energy
+Special Energy
+Provides [C][C] energy. Doesn’t count as a basic Energy card.
+Illus. Keiji Kinebuchi
+Base Set – 96/102 – Uncommon
+Fighting Energy from Base Set
+Fighting Energy (Base Set BS 97)
+Text // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Fighting Energy
+Basic Energy
+Illus. Keiji Kinebuchi
+Base Set – 97/102
+Fire Energy from Base Set
+Fire Energy (Base Set BS 98)
+Text // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Fire Energy
+Basic Energy
+Illus. Keiji Kinebuchi
+Base Set – 98/102
+Grass Energy from Base Set
+Grass Energy (Base Set BS 99)
+Text // Proxies // Rulings // Discussion: 5
+
+Buy it on Amazon »
+Grass Energy
+Basic Energy
+Illus. Keiji Kinebuchi
+Base Set – 99/102
+Lightning Energy from Base Set
+Lightning Energy (Base Set BS 100)
+Text // Proxies // Rulings // Discussion: 8
+
+Buy it on Amazon »
+Lightning Energy
+Basic Energy
+Illus. Keiji Kinebuchi
+Base Set – 100/102
+Psychic Energy from Base Set
+Psychic Energy (Base Set BS 101)
+Text // Proxies // Rulings // Discussion: 0
+
+Buy it on Amazon »
+Psychic Energy
+Basic Energy
+Illus. Keiji Kinebuchi
+Base Set – 101/102
+Water Energy from Base Set
+Water Energy (Base Set BS 102)
+Text // Proxies // Rulings // Discussion: 6
+
+Buy it on Amazon »
+Water Energy
+Basic Energy
+Illus. Keiji Kinebuchi
+Base Set – 102/102
+[ 1-102 ]
+© 2011-2016 PkmnCards. Log out. Contact.
+
+This website is in no way affiliated with TPCi, Nintendo, Creatures, or Game Freak.
