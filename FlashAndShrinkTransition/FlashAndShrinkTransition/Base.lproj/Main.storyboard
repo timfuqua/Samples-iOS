@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlashAndShrinkTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2f-RF-kGC" userLabel="PaddingView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBe-Hm-HqR" userLabel="FirstQuad">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="law-in-7sD" userLabel="FirstQuadButton">
+                                                <rect key="frame" x="135" y="129" width="30" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="QI"/>
+                                                <connections>
+                                                    <action selector="firstQuadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64T-ql-22c"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="law-in-7sD" firstAttribute="centerX" secondItem="NBe-Hm-HqR" secondAttribute="centerX" id="N7c-ac-Ywm"/>
+                                            <constraint firstItem="law-in-7sD" firstAttribute="centerY" secondItem="NBe-Hm-HqR" secondAttribute="centerY" id="RD7-ak-9gV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="758-Kq-zmo" userLabel="SecondQuad">
+                                        <rect key="frame" x="300" y="300" width="300" height="300"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-CY-6G8" userLabel="SecondQuadButton">
+                                                <rect key="frame" x="135" y="129" width="31" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="QII"/>
+                                                <connections>
+                                                    <action selector="secondQuadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FOV-I0-7nO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Mh7-CY-6G8" firstAttribute="centerY" secondItem="758-Kq-zmo" secondAttribute="centerY" id="3FK-2m-ojW"/>
+                                            <constraint firstItem="Mh7-CY-6G8" firstAttribute="centerX" secondItem="758-Kq-zmo" secondAttribute="centerX" id="fEB-Rg-KnJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9LG-ob-Dm5" userLabel="ThirdQuad">
+                                        <rect key="frame" x="0.0" y="300" width="300" height="300"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AL-BB-BBU" userLabel="ThirdQuadButton">
+                                                <rect key="frame" x="132" y="129" width="37" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="QIII"/>
+                                                <connections>
+                                                    <action selector="thirdQuadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I1G-1s-F67"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="2AL-BB-BBU" firstAttribute="centerX" secondItem="9LG-ob-Dm5" secondAttribute="centerX" id="coj-ZA-TBP"/>
+                                            <constraint firstItem="2AL-BB-BBU" firstAttribute="centerY" secondItem="9LG-ob-Dm5" secondAttribute="centerY" id="tRt-EL-k7z"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdA-rA-KJp" userLabel="FourthQuad">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K31-gy-ABf" userLabel="FourthQuadButton">
+                                                <rect key="frame" x="130" y="129" width="41" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="QIV">
+                                                    <color key="titleColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fourthQuadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7e1-NT-V4b"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="K31-gy-ABf" firstAttribute="centerX" secondItem="hdA-rA-KJp" secondAttribute="centerX" id="EnE-md-fhG"/>
+                                            <constraint firstItem="K31-gy-ABf" firstAttribute="centerY" secondItem="hdA-rA-KJp" secondAttribute="centerY" id="Fij-iJ-by7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="758-Kq-zmo" firstAttribute="trailing" secondItem="t2f-RF-kGC" secondAttribute="trailing" id="1gf-Ve-Vmq"/>
+                                    <constraint firstItem="NBe-Hm-HqR" firstAttribute="top" secondItem="t2f-RF-kGC" secondAttribute="top" id="2G4-jl-PPv"/>
+                                    <constraint firstItem="758-Kq-zmo" firstAttribute="leading" secondItem="t2f-RF-kGC" secondAttribute="centerX" id="2Hz-CX-syy"/>
+                                    <constraint firstItem="hdA-rA-KJp" firstAttribute="bottom" secondItem="t2f-RF-kGC" secondAttribute="centerY" id="Cdj-ze-Au5"/>
+                                    <constraint firstItem="hdA-rA-KJp" firstAttribute="trailing" secondItem="t2f-RF-kGC" secondAttribute="centerX" id="P13-0H-9tj"/>
+                                    <constraint firstItem="758-Kq-zmo" firstAttribute="bottom" secondItem="t2f-RF-kGC" secondAttribute="bottom" id="X4F-BW-ear"/>
+                                    <constraint firstItem="9LG-ob-Dm5" firstAttribute="trailing" secondItem="t2f-RF-kGC" secondAttribute="centerX" id="a6x-L3-x9I"/>
+                                    <constraint firstItem="hdA-rA-KJp" firstAttribute="top" secondItem="t2f-RF-kGC" secondAttribute="top" id="ada-1b-Klt"/>
+                                    <constraint firstItem="hdA-rA-KJp" firstAttribute="leading" secondItem="t2f-RF-kGC" secondAttribute="leading" id="c3a-By-pbp"/>
+                                    <constraint firstItem="9LG-ob-Dm5" firstAttribute="top" secondItem="t2f-RF-kGC" secondAttribute="centerY" id="exg-De-XcK"/>
+                                    <constraint firstItem="758-Kq-zmo" firstAttribute="top" secondItem="t2f-RF-kGC" secondAttribute="centerY" id="nzR-db-LCc"/>
+                                    <constraint firstItem="9LG-ob-Dm5" firstAttribute="leading" secondItem="t2f-RF-kGC" secondAttribute="leading" id="uub-51-yBc"/>
+                                    <constraint firstItem="NBe-Hm-HqR" firstAttribute="bottom" secondItem="t2f-RF-kGC" secondAttribute="centerY" id="x3s-16-y7W"/>
+                                    <constraint firstItem="NBe-Hm-HqR" firstAttribute="trailing" secondItem="t2f-RF-kGC" secondAttribute="trailing" id="yGi-gq-f3g"/>
+                                    <constraint firstItem="9LG-ob-Dm5" firstAttribute="bottom" secondItem="t2f-RF-kGC" secondAttribute="bottom" id="zNc-cm-rE0"/>
+                                    <constraint firstItem="NBe-Hm-HqR" firstAttribute="leading" secondItem="t2f-RF-kGC" secondAttribute="centerX" id="zyZ-Qx-nC0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t2f-RF-kGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Xz-OD-QEk"/>
+                            <constraint firstItem="t2f-RF-kGC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="U1V-up-tBO"/>
+                            <constraint firstItem="t2f-RF-kGC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pPf-ZQ-Mwd"/>
+                            <constraint firstItem="t2f-RF-kGC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vaa-Lj-wfF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstQuadButton" destination="law-in-7sD" id="7jE-9B-bqH"/>
+                        <outlet property="fourthQuadButton" destination="K31-gy-ABf" id="jrz-8Z-Xwv"/>
+                        <outlet property="paddingView" destination="t2f-RF-kGC" id="A6B-5N-jOA"/>
+                        <outlet property="secondQuadButton" destination="Mh7-CY-6G8" id="Rsi-3i-Wyn"/>
+                        <outlet property="thirdQuadButton" destination="2AL-BB-BBU" id="e0G-K5-9k1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
