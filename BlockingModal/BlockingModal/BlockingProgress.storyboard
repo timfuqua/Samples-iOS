@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Blocking Progress Controller-->
+        <scene sceneID="o4r-Y8-F7p">
+            <objects>
+                <viewController storyboardIdentifier="BlockingProgressController" id="gfl-Wf-UiN" customClass="BlockingProgressController" customModule="BlockingModal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B7f-ED-BTZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="o0J-Xt-xnn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RGU-zs-bB3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-Yd-dC5" userLabel="PaddingView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdb-gd-crC" userLabel="ContentView">
+                                        <rect key="frame" x="30" y="239" width="540" height="62.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kw-Hl-z3V" userLabel="Title Label">
+                                                <rect key="frame" x="209" y="0.0" width="123.5" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="uFG-OG-O9h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0% Done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N04-qG-jlt" userLabel="Progress Label">
+                                                <rect key="frame" x="240" y="32" width="61" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="lT2-lQ-h6R"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zt7-ta-eKB">
+                                                <rect key="frame" x="0.0" y="60" width="540" height="2"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="zt7-ta-eKB" firstAttribute="top" secondItem="N04-qG-jlt" secondAttribute="bottom" constant="8" id="1ID-fg-yQl"/>
+                                            <constraint firstItem="N04-qG-jlt" firstAttribute="centerX" secondItem="mdb-gd-crC" secondAttribute="centerX" id="3vQ-QU-jaI"/>
+                                            <constraint firstItem="zt7-ta-eKB" firstAttribute="bottom" secondItem="mdb-gd-crC" secondAttribute="bottom" id="65U-1v-HLw"/>
+                                            <constraint firstItem="N04-qG-jlt" firstAttribute="top" secondItem="8kw-Hl-z3V" secondAttribute="bottom" constant="8" id="Hy8-SZ-WSZ"/>
+                                            <constraint firstItem="8kw-Hl-z3V" firstAttribute="top" secondItem="mdb-gd-crC" secondAttribute="top" id="UQh-mu-YLB"/>
+                                            <constraint firstItem="zt7-ta-eKB" firstAttribute="width" secondItem="mdb-gd-crC" secondAttribute="width" id="aYo-Vt-WUD"/>
+                                            <constraint firstItem="zt7-ta-eKB" firstAttribute="centerX" secondItem="mdb-gd-crC" secondAttribute="centerX" id="m5A-jm-XHg"/>
+                                            <constraint firstItem="8kw-Hl-z3V" firstAttribute="centerX" secondItem="mdb-gd-crC" secondAttribute="centerX" id="mQ4-Hp-aSa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mdb-gd-crC" firstAttribute="centerX" secondItem="e6c-Yd-dC5" secondAttribute="centerX" id="b7g-Kb-IhK"/>
+                                    <constraint firstItem="mdb-gd-crC" firstAttribute="centerY" secondItem="e6c-Yd-dC5" secondAttribute="centerY" constant="-30" id="b8k-nq-z1k"/>
+                                    <constraint firstItem="mdb-gd-crC" firstAttribute="width" secondItem="e6c-Yd-dC5" secondAttribute="width" multiplier="0.9" id="jHX-yH-hCA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e6c-Yd-dC5" firstAttribute="height" secondItem="RGU-zs-bB3" secondAttribute="height" id="4Un-gk-PYO"/>
+                            <constraint firstItem="e6c-Yd-dC5" firstAttribute="centerX" secondItem="RGU-zs-bB3" secondAttribute="centerX" id="94i-GG-2Vf"/>
+                            <constraint firstItem="e6c-Yd-dC5" firstAttribute="centerY" secondItem="RGU-zs-bB3" secondAttribute="centerY" id="C2g-3L-VcG"/>
+                            <constraint firstItem="e6c-Yd-dC5" firstAttribute="width" secondItem="RGU-zs-bB3" secondAttribute="width" id="e54-Mx-cwA"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="progressLabel" destination="N04-qG-jlt" id="0Bm-r3-4Lr"/>
+                        <outlet property="progressView" destination="zt7-ta-eKB" id="5K1-47-cK6"/>
+                        <outlet property="titleLabel" destination="8kw-Hl-z3V" id="sKI-xi-Ibm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XoZ-6H-XGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="480" y="423"/>
+        </scene>
+    </scenes>
+</document>
