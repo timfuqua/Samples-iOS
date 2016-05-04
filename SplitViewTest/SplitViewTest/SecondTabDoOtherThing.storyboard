@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Second Tab Do Thing-->
+        <scene sceneID="o2R-jd-8kS">
+            <objects>
+                <viewController storyboardIdentifier="SecondTabDetailController" title="Second Tab Do Thing" id="Urj-iE-h8c" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fGP-gY-cDM"/>
+                        <viewControllerLayoutGuide type="bottom" id="SEN-2H-g5r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sYt-Yf-SpL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwu-7r-SYv" userLabel="PaddingView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xb8-q7-UW1" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="116"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do the other thing!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcZ-j0-xmp" userLabel="Other Instruction Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMM-Cy-yIN" userLabel="Other Instruction Button">
+                                                <rect key="frame" x="150" y="56" width="300" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="You got it!"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="LMM-Cy-yIN" firstAttribute="width" secondItem="Xb8-q7-UW1" secondAttribute="width" multiplier="0.5" id="0mP-s4-UMP"/>
+                                            <constraint firstItem="CcZ-j0-xmp" firstAttribute="width" secondItem="Xb8-q7-UW1" secondAttribute="width" id="9nL-Em-4d1"/>
+                                            <constraint firstItem="CcZ-j0-xmp" firstAttribute="centerX" secondItem="Xb8-q7-UW1" secondAttribute="centerX" id="QIy-29-Hrg"/>
+                                            <constraint firstItem="LMM-Cy-yIN" firstAttribute="centerX" secondItem="Xb8-q7-UW1" secondAttribute="centerX" id="Yld-Aa-j3D"/>
+                                            <constraint firstAttribute="bottom" secondItem="LMM-Cy-yIN" secondAttribute="bottom" id="c1W-gr-7tU"/>
+                                            <constraint firstItem="CcZ-j0-xmp" firstAttribute="top" secondItem="Xb8-q7-UW1" secondAttribute="top" id="uzp-LY-FfZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Xb8-q7-UW1" firstAttribute="top" secondItem="Cwu-7r-SYv" secondAttribute="top" id="B7B-ax-zmX"/>
+                                    <constraint firstItem="Xb8-q7-UW1" firstAttribute="width" secondItem="Cwu-7r-SYv" secondAttribute="width" id="IiV-dv-8Hr"/>
+                                    <constraint firstItem="Xb8-q7-UW1" firstAttribute="height" secondItem="Cwu-7r-SYv" secondAttribute="height" multiplier="0.2" id="mAc-ly-njD"/>
+                                    <constraint firstItem="Xb8-q7-UW1" firstAttribute="centerX" secondItem="Cwu-7r-SYv" secondAttribute="centerX" id="yYJ-j5-3dl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cwu-7r-SYv" firstAttribute="bottom" secondItem="SEN-2H-g5r" secondAttribute="top" id="XGe-Wq-Bk7"/>
+                            <constraint firstItem="Cwu-7r-SYv" firstAttribute="width" secondItem="sYt-Yf-SpL" secondAttribute="width" id="a8V-lt-LIm"/>
+                            <constraint firstItem="Cwu-7r-SYv" firstAttribute="centerX" secondItem="sYt-Yf-SpL" secondAttribute="centerX" id="nzf-Sb-tbq"/>
+                            <constraint firstItem="Cwu-7r-SYv" firstAttribute="top" secondItem="fGP-gY-cDM" secondAttribute="bottom" id="ygE-zG-NiR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULQ-Dh-t1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="631"/>
+        </scene>
+    </scenes>
+</document>

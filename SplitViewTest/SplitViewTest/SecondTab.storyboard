@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="xhG-n7-3VI">
+            <objects>
+                <navigationController storyboardIdentifier="SecondTabNavController" id="YON-Ti-acA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="NAn-O1-r3R"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JwE-v0-1kV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rQE-Cb-QPI" kind="relationship" relationship="rootViewController" id="sfG-6J-rj4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ntP-qe-QBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349" y="545"/>
+        </scene>
+        <!--SecondTabController-->
+        <scene sceneID="D2y-Vt-QF1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SecondTabControllerStoryboardReference" storyboardName="SecondTabCollection" referencedIdentifier="SecondTabController" id="rQE-Cb-QPI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cBX-Wc-YhO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HyZ-py-t80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834" y="545"/>
+        </scene>
+    </scenes>
+</document>

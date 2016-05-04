@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jcJ-Ib-Fv4">
+            <objects>
+                <navigationController storyboardIdentifier="FirstTabTableNavController" automaticallyAdjustsScrollViewInsets="NO" id="LPe-dD-O70" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gw8-e3-n8u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZAs-D8-VYf" kind="relationship" relationship="rootViewController" id="Xae-JY-X1L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7y-w0-aBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="660"/>
+        </scene>
+        <!--FirstTabDetailController-->
+        <scene sceneID="VxI-Zv-8gu">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FirstTabDetailControllerStoryboardReference" storyboardName="FirstTableDoThing" referencedIdentifier="FirstTabDetailController" id="ZAs-D8-VYf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pkR-AT-3ud"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2SC-Xm-k7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1539" y="660"/>
+        </scene>
+    </scenes>
+</document>

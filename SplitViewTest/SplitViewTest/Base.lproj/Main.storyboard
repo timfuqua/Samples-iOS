@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Y1f-gq-RMB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--First Tab Split View Controller-->
+        <scene sceneID="dcz-oL-qk8">
+            <objects>
+                <splitViewController storyboardIdentifier="FirstTabSplitViewController" id="462-Ee-sLd" customClass="FirstTabSplitViewController" customModule="SplitViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="MN9-1I-HXK"/>
+                    <connections>
+                        <segue destination="d5o-rS-g0F" kind="relationship" relationship="masterViewController" id="jhl-qY-qjO"/>
+                        <segue destination="laU-c3-094" kind="relationship" relationship="detailViewController" id="R2C-BD-GiS"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2L-fb-SJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="-63"/>
+        </scene>
+        <!--FirstTabNavController-->
+        <scene sceneID="Q5s-qg-iZn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FirstTabStoryboardID" storyboardName="FirstTab" referencedIdentifier="FirstTabNavController" id="d5o-rS-g0F" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First Tab" id="sQB-JZ-TAq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="szt-5F-oLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="-113"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zjG-DX-IOY">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="Y1f-gq-RMB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Vru-tT-G1S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="462-Ee-sLd" kind="relationship" relationship="viewControllers" id="zEW-uk-eOp"/>
+                        <segue destination="UYS-Ag-aCe" kind="relationship" relationship="viewControllers" id="vRs-OL-I3n"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDd-ix-02n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="275"/>
+        </scene>
+        <!--SecondTabNavController-->
+        <scene sceneID="WRy-bK-rPN">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SecondTabStoryboardID" storyboardName="SecondTab" referencedIdentifier="SecondTabNavController" id="GRV-Wh-9j6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lIG-av-FwR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfg-ks-YT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="642"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xOM-oK-ful">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UYS-Ag-aCe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="jwc-KV-BTm"/>
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="88u-q7-I0Z">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GRV-Wh-9j6" kind="relationship" relationship="viewControllers" id="4Tc-38-qRo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGz-zd-VXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="642"/>
+        </scene>
+        <!--FirstTabTableNavController-->
+        <scene sceneID="ubS-0Y-BCy">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FirstTabDetailControllerStoryboardReference" storyboardName="FirstTabTableNav" referencedIdentifier="FirstTabTableNavController" id="laU-c3-094" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LQ-VI-FEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273.5" y="-11"/>
+        </scene>
+    </scenes>
+</document>
