@@ -14,6 +14,9 @@
 		C40FB95822C1D6870051E2AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40FB95722C1D6870051E2AD /* Assets.xcassets */; };
 		C40FB95B22C1D6870051E2AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40FB95922C1D6870051E2AD /* LaunchScreen.storyboard */; };
 		C40FB96622C1D6870051E2AD /* DijkstrasAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FB96522C1D6870051E2AD /* DijkstrasAlgorithmTests.swift */; };
+		C4ABE94C22C1D71700F31F28 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABE94B22C1D71700F31F28 /* Node.swift */; };
+		C4ABE94E22C1D74E00F31F28 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABE94D22C1D74E00F31F28 /* Connection.swift */; };
+		C4ABE95022C1D7BF00F31F28 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABE94F22C1D7BF00F31F28 /* Path.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		C40FB96122C1D6870051E2AD /* DijkstrasAlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DijkstrasAlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40FB96522C1D6870051E2AD /* DijkstrasAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstrasAlgorithmTests.swift; sourceTree = "<group>"; };
 		C40FB96722C1D6870051E2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4ABE94B22C1D71700F31F28 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		C4ABE94D22C1D74E00F31F28 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		C4ABE94F22C1D7BF00F31F28 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				C40FB95922C1D6870051E2AD /* LaunchScreen.storyboard */,
 				C40FB95C22C1D6870051E2AD /* Info.plist */,
 				C40FB95422C1D6850051E2AD /* DijkstrasAlgorithm.xcdatamodeld */,
+				C4ABE94B22C1D71700F31F28 /* Node.swift */,
+				C4ABE94D22C1D74E00F31F28 /* Connection.swift */,
+				C4ABE94F22C1D7BF00F31F28 /* Path.swift */,
 			);
 			path = DijkstrasAlgorithm;
 			sourceTree = "<group>";
@@ -202,7 +211,10 @@
 			files = (
 				C40FB95622C1D6850051E2AD /* DijkstrasAlgorithm.xcdatamodeld in Sources */,
 				C40FB95022C1D6850051E2AD /* ViewController.swift in Sources */,
+				C4ABE94E22C1D74E00F31F28 /* Connection.swift in Sources */,
 				C40FB94E22C1D6850051E2AD /* AppDelegate.swift in Sources */,
+				C4ABE95022C1D7BF00F31F28 /* Path.swift in Sources */,
+				C4ABE94C22C1D71700F31F28 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
